@@ -1,6 +1,6 @@
 .body {
   color: #151515;
-  background-color: #F4F4F4;
+  background-color: var(--bg-color);
   width: 1440px;
   padding: 0 calc((100% - 1440px)/2);
 }

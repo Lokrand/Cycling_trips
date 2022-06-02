@@ -1,0 +1,254 @@
+@import '../vendor/normalize';
+@import '../blocks/main/main';
+@import '../blocks/body/body';
+
+@import '../blocks/header/header';
+@import '../blocks/header/__item/header__item';
+@import '../blocks/header/__link/header__link';
+@import '../blocks/header/__menu/header__menu';
+
+@import '../blocks/content/content';
+@import '../blocks/content/__bike-name/content__bike-name';
+@import '../blocks/content/__button/content__button';
+@import '../blocks/content/__description/content__description';
+@import '../blocks/content/__header/content__header';
+@import '../blocks/content/__text/content__text';
+@import '../blocks/content/__line/content__line';
+@import '../blocks/content/__image/content__image';
+@import '../blocks/content/__description/_workout/content__description_workout';
+
+@import '../blocks/merx/merx';
+@import '../blocks/merx/__author/merx__author';
+@import '../blocks/merx/__content/merx__content';
+@import '../blocks/merx/__hobbies/merx__hobbies';
+@import '../blocks/merx/__image/merx__image';
+@import '../blocks/merx/__title/merx__title';
+
+@import '../blocks/highway/highway';
+@import '../blocks/highway/__button/highway__button';
+@import '../blocks/highway/__content/highway__content';
+@import '../blocks/highway/__gallery/highway__gallery';
+@import '../blocks/highway/__image/highway__image';
+@import '../blocks/highway/__navigation/highway__navigation';
+
+@import '../blocks/bikes/bikes';
+@import '../blocks/bikes/__border/bikes__border';
+@import '../blocks/bikes/__header/bikes__header';
+@import '../blocks/bikes/__image/bikes__image';
+@import '../blocks/bikes/__link/bikes__link';
+@import '../blocks/bikes/__link/_bold/bikes__link_bold';
+@import '../blocks/bikes/__links/bikes__links';
+@import '../blocks/bikes/__name/bikes__name';
+@import '../blocks/bikes/__type/bikes__type';
+@import '../blocks/bikes/__types/bikes__types';
+
+@import '../blocks/workout/workout';
+@import '../blocks/workout/__image/workout__image';
+@import '../blocks/workout/__place/workout__place';
+@import '../blocks/workout/__places/workout__places';
+
+@import '../blocks/footer/footer';
+@import '../blocks/footer/__club-name/footer__club-name';
+@import '../blocks/footer/__content/footer__content';
+@import '../blocks/footer/__email/footer__email';
+@import '../blocks/footer/__theme/footer__theme';
+@import '../blocks/footer/__title/footer__title';
+
+:root {
+  --bg-color: #f4f4f4;
+  --footer-bg-color: #EFEFEF;
+}
+
+
+
+
+
+
+
+
+
+
+.body_night {
+  --bg-color: #333;
+  --footer-bg-color: #2F2F2F;
+}
+
+.content__header_night {
+  color: #FFFFFF;
+}
+
+.content__text_night {
+  color: #E6E6E6;
+}
+
+.content__bike-name_night {
+  color: #FFFFFF;
+}
+
+.content__line_night {
+  border-color: #707070;
+}
+
+.highway__button_night {
+  background-color: #434343;
+  background-image: url('../images/highway-navigation-night.svg');
+}
+
+.header__link_night {
+  color: #FFFFFF;
+}
+.merx__title_night {
+  color: #FFFFFF;
+}
+
+.merx__author_night {
+  color: #FFFFFF;
+}
+
+.merx__hobbies_night {
+  color: #E5E5E5;
+}
+
+.footer__title_night {
+  color: #FFFFFF;
+}
+
+.footer__club-name_night {
+  color: #565656;
+}
+
+.workout__place_night {
+  color: #FFFFFF;
+}
+
+.bikes__name_night {
+  color: #FFFFFF;
+}
+
+.bikes__link_night {
+  color: #E5E5E5;
+}
+.bikes__link_bold_night {
+  color: #FFFFFF;
+}
+
+.footer__theme-switch_nigth::after {
+  background: url('../images/night-dark.svg');
+}
+
+.footer__theme_night::before {
+  background: url('../images/day-dark.svg');
+}
+.footer__theme_night .footer__theme-switch_nigth {
+  background: #545454;
+}
+
+.footer__email_night {
+  background-color: #2F2F2F;
+}
+
+.footer__email_night::placeholder {
+  color: #FFFFFF;
+  opacity: .5;
+}
+
+.content__container {
+  position: absolute;
+  width: 810px;
+  height: 430px;
+  border: 1px solid red;
+  z-index: 2;
+  top: 347px;
+  left: 509px;
+}
+
+// .content__bike-image {
+// }
+.content {
+  &__bike-image {
+    width: 340px;
+    height: 260px;
+    object-fit: cover;
+  }
+  &__sticky-container {
+    position: sticky;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    top: 52px;
+    width: 440px;
+    padding: 20px 50px;
+    border-radius: 20px;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    z-index: 3;
+    cursor: pointer;
+  }
+}
+// .content__sticky-container {
+// }
+
+.footer__logo-mobile {
+  display: none;
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 38px;
+  height: 38px;
+}
+
+@media screen and (max-width: 499px) {
+  .footer__logo-mobile {
+    display: block;
+  }
+}
+
+.header__burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .header__burger-menu {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top: 25px;
+    left: 280px;
+  }
+}
+
+.header__burger-menu span, .header__burger-menu::after, .header__burger-menu::before{
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: #151515;
+  margin: 0 auto;
+}
+.header__burger-menu span{
+  top: 19px;
+}
+.header__burger-menu::after, .header__burger-menu::before{
+  content: '';
+}
+.header__burger-menu::after{
+  bottom: 8px;
+}
+.header__burger-menu::before{
+  top: 3px;
+}
+
+.popup {
+  display: none;
+  position: relative;
+  height: 640px;
+  width: 320px;
+}
+
+.footer__theme_burger {
+  bottom: 100px;
+  left: 100px;
+}
+
+.content__block {
+  display: flex;
+  column-gap: 250px;
+}

@@ -1,7 +1,8 @@
 .content__header {
   font: 700 55px/60px 'Inter',sans-serif;
   margin-top: 0;
-  margin-bottom: 50px;
+  width: 460px;
+  height: fit-content;
   color: #151515;
   letter-spacing: -0.5px;
 }

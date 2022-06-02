@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Сycling trips</title>
 </head>
 <body class="body">
@@ -15,18 +15,23 @@
         <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
         <li class="header__item"><a href="#workout" class="header__link">Тренировки</a></li>
       </ul>
+      <div class="header__burger-menu">
+        <span></span>
+      </div>
     </header>
   <div class="main">
     <section class="content">
-      <div class="content__description">
+      <div class="content__block">
         <h2 class="content__header">Шоссе, ТТ и&nbsp;Грэвел</h2>
+        <img src="./images/Placeholder.png" alt="Природа лесных гор" class="content__image">
+      </div>
+      <div class="content__description">
         <p class="content__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам –
           нужно только определиться с выбором велосипеда и отправиться в путь.</p>
         <button type="button" class="content__button">Подробнее</button>
         <p class="content__bike-name">Cannondale Systemsix</p>
         <hr class="content__line">
       </div>
-      <img src="./images/Placeholder.png" alt="Природа лесных гор" class="content__image">
       <div class="content__container">
         <div class="content__sticky-container">
           <img src="./images/bike-2.png" alt="Cannondale Systemsix Himod" class="content__bike-image">
@@ -110,6 +115,18 @@
         <span class="footer__theme-switch"></span>
       </label>
     </footer>
+    <div class="popup">
+      <img src="" alt="">
+        <ul class="popup__list">
+          <li class="popup__item">Покрытия и градиенты</li>
+          <li class="popup__item">Велосипеды</li>
+          <li class="popup__item">Тренировки</li>
+        </ul>
+      <label class="footer__theme footer__theme_burger">
+        <input type="checkbox" id="theme-switch">
+        <span class="footer__theme-switch"></span>
+      </label>
+    </div>
   </div>
   <script src="./script/bikes.js"></script>
   <script src="./script/theme-switch.js"></script>

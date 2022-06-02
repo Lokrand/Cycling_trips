@@ -1,7 +1,7 @@
 .footer {
   padding: 80px 120px 60px 120px;
   position: relative;
-  background-color: #EFEFEF;
+  background-color: var(--footer-bg-color);
 }
 
 @media screen and (max-width: 1439px) {

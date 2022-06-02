@@ -13,7 +13,7 @@ const workoutPlace = document.querySelectorAll('.workout__place');
 const bikesMy = document.querySelectorAll('.bikes__name');
 const bikeLink = document.querySelectorAll('.bikes__link');
 const bikeLinkBold = document.querySelector('.bikes__link_bold');
-const footer = document.querySelector('.footer');
+
 const footerTitle = document.querySelector('.footer__title');
 const footerClubName = document.querySelector('.footer__club-name');
 const nightIcon = document.querySelector('.footer__theme-switch');
@@ -22,7 +22,7 @@ const footerEmail = document.querySelector('.footer__email');
 buttonSwitch.addEventListener('click', () => {
   // isDarkMode = !isDarkMode;
   body.classList.toggle('body_night')
-  footer.classList.toggle('footer_night')
+
   header.forEach((el) => {
     el.classList.toggle('content__header_night')
   })

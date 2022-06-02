@@ -8,5 +8,11 @@
   text-decoration: none;
   list-style-type: none;
   padding: 28px 120px 28px 0;
+}
 
+@media screen and (max-width: 499px) {
+  .header__menu {
+    display: none;
+    padding: 0;
+  }
 }
