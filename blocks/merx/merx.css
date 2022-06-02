@@ -3,3 +3,29 @@
   padding: 0 120px 60px 0;
   column-gap: 80px;
 }
+
+@media screen and (max-width: 1439px) {
+  .merx {
+    padding: 0 44px 60px 0;
+    column-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .merx {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .merx {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .merx {
+
+  }
+}

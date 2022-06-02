@@ -3,3 +3,27 @@
   justify-content: space-between;
   margin-bottom: 117px;
 }
+
+@media screen and (max-width: 1439px) {
+  .bikes__header {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bikes__header {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .bikes__header {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .bikes__header {
+
+  }
+}

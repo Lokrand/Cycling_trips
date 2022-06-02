@@ -5,3 +5,30 @@
   top: 631px;
   left: 222px;
 }
+
+@media screen and (max-width: 1439px) {
+  .content__line {
+    width: 100px;
+    top: 645px;
+    left: 213px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__line {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content__line {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content__line {
+
+  }
+}
+

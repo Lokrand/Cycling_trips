@@ -2,3 +2,29 @@
   display: flex;
   column-gap: 40px;
 }
+
+
+@media screen and (max-width: 1439px) {
+  .highway__gallery {
+    column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .highway__gallery {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .highway__gallery {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .highway__gallery {
+
+  }
+}

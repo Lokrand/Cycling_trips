@@ -10,6 +10,26 @@
   padding: 28px 120px 28px 0;
 }
 
+
+@media screen and (max-width: 1439px) {
+  .header__menu {
+    padding: 20px 60px 20px 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__menu {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .header__menu {
+
+  }
+}
+
+
 @media screen and (max-width: 499px) {
   .header__menu {
     display: none;

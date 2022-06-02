@@ -436,6 +436,11 @@ template {
   padding: 28px 120px 28px 0;
 }
 
+@media screen and (max-width: 1439px) {
+  .header__menu {
+    padding: 20px 60px 20px 0;
+  }
+}
 @media screen and (max-width: 499px) {
   .header__menu {
     display: none;
@@ -455,6 +460,7 @@ template {
 @media screen and (max-width: 1439px) {
   .content {
     margin-bottom: 80px;
+    column-gap: 50px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -529,33 +535,11 @@ template {
   grid-area: C;
 }
 
-/* @media screen and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .content__description {
-    width: 80px;
-    margin: 80px 250px 209px 0;
+    width: 300px;
   }
 }
-
-@media screen and (max-width: 1023px) {
-  .content__description {
-    width: 60px;
-    margin: 80px 250px 209px 0;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .content__description {
-    width: 40px;
-    margin: 80px 250px 209px 0;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  .content__description {
-    width: 20px;
-    margin: 80px 250px 209px 0;
-  }
-} */
 .content__header {
   font: 700 55px/60px "Inter", sans-serif;
   margin-top: 0;
@@ -567,6 +551,12 @@ template {
   grid-area: A;
 }
 
+@media screen and (max-width: 1439px) {
+  .content__header {
+    width: 300px;
+    margin: 40px 0 0 0;
+  }
+}
 @media screen and (max-width: 499px) {
   .content__header {
     font: 700 32px/40px "Inter", sans-serif;
@@ -588,6 +578,13 @@ template {
   left: 222px;
 }
 
+@media screen and (max-width: 1439px) {
+  .content__line {
+    width: 100px;
+    top: 645px;
+    left: 213px;
+  }
+}
 .content__image {
   margin-top: 20px;
   width: 610px;
@@ -595,6 +592,12 @@ template {
   grid-area: B;
 }
 
+@media screen and (max-width: 1439px) {
+  .content__image {
+    width: 594px;
+    margin-top: 0;
+  }
+}
 .content__description_workout {
   display: grid;
   margin-right: 0;
@@ -605,12 +608,23 @@ template {
   /* row-gap: 50px; */
 }
 
+@media screen and (max-width: 1439px) {
+  .content__description_workout {
+    column-gap: 64px;
+  }
+}
 .merx {
   display: flex;
   padding: 0 120px 60px 0;
   column-gap: 80px;
 }
 
+@media screen and (max-width: 1439px) {
+  .merx {
+    padding: 0 44px 60px 0;
+    column-gap: 50px;
+  }
+}
 .merx__author {
   font: 500 20px/32px "Inter", sans-serif;
   color: var(--header-text-color);
@@ -632,6 +646,12 @@ template {
   height: 460px;
 }
 
+@media screen and (max-width: 1439px) {
+  .merx__image {
+    width: 500px;
+    height: 400px;
+  }
+}
 .merx__title {
   font: 600 34px/44px "Inter", sans-serif;
   color: var(--header-text-color);
@@ -639,6 +659,12 @@ template {
   margin-bottom: 258px;
 }
 
+@media screen and (max-width: 1439px) {
+  .merx__title {
+    width: 350px;
+    margin-bottom: 149px;
+  }
+}
 .highway {
   padding-top: 63px;
 }
@@ -675,6 +701,11 @@ template {
   column-gap: 40px;
 }
 
+@media screen and (max-width: 1439px) {
+  .highway__gallery {
+    column-gap: 32px;
+  }
+}
 .highway__image {
   height: 400px;
   width: 650px;
@@ -685,34 +716,69 @@ template {
   object-fit: cover;
 }
 
+@media screen and (max-width: 1439px) {
+  .highway__image {
+    height: 300px;
+    width: 440px;
+  }
+}
 .highway__navigation {
   margin: 50px 0 60px;
   display: flex;
   column-gap: 20px;
 }
 
+@media screen and (max-width: 1439px) {
+  .highway__navigation {
+    margin: 30px 0;
+  }
+}
 .bikes {
   padding: 43px 120px 90px 0;
 }
 
+@media screen and (max-width: 1439px) {
+  .bikes {
+    padding: 43px 50px 0 0;
+  }
+}
 .bikes__border {
   width: 380px;
   height: 380px;
   border-radius: 20px;
+  box-shadow: -20px 60px 100px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
 }
 
+@media screen and (max-width: 1439px) {
+  .bikes__border {
+    width: 300px;
+    height: 300px;
+  }
+}
 .bikes__header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 117px;
 }
 
+@media screen and (max-width: 1439px) {
+  .bikes__header {
+    margin-bottom: 50px;
+  }
+}
 .bikes__image {
   width: 340px;
   height: 340px;
   margin: 20px 0 0 20px;
 }
 
+@media screen and (max-width: 1439px) {
+  .bikes__image {
+    width: 260px;
+    height: 260px;
+  }
+}
 .bikes__link {
   font: 400 18px/28px "Inter", sans-serif;
   color: var(--content-text-color);
@@ -744,6 +810,11 @@ template {
   column-gap: 30px;
 }
 
+@media screen and (max-width: 1439px) {
+  .bikes__types {
+    column-gap: 22px;
+  }
+}
 .workout {
   display: flex;
   column-gap: 160px;
@@ -752,6 +823,12 @@ template {
   padding-bottom: 120px;
 }
 
+@media screen and (max-width: 1439px) {
+  .workout {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+}
 .workout__image {
   width: 580px;
   height: 460px;
@@ -782,6 +859,11 @@ template {
   background-color: var(--footer-bg-color);
 }
 
+@media screen and (max-width: 1439px) {
+  .footer {
+    padding: 60px 80px;
+  }
+}
 @media screen and (max-width: 499px) {
   .footer {
     padding: 60px 0 25px;
@@ -899,6 +981,11 @@ template {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer__theme {
+    left: 778px;
+  }
+}
 .footer__title {
   width: 229px;
   font: 600 24px/32px "Inter", sans-serif;
@@ -937,6 +1024,10 @@ template {
   --footer-theme-bg-color: #545454;
 }
 
+.bikes__border_night {
+  box-shadow: none;
+}
+
 .highway__button_night {
   background-image: url("../images/highway-navigation-night.svg");
 }
@@ -963,6 +1054,26 @@ template {
   left: 509px;
 }
 
+@media screen and (max-width: 1439px) {
+  .content__container {
+    width: 600px;
+    height: 400px;
+    top: 420px;
+    left: 342px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .content__bike-image {
+    width: 310px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .content__sticky-container {
+    width: 350px;
+    padding: 10px 20px;
+  }
+}
 .content__bike-image {
   width: 340px;
   height: 260px;
@@ -1059,6 +1170,11 @@ template {
   margin-bottom: 83px;
 }
 
+@media screen and (max-width: 1439px) {
+  .content__text_highway {
+    margin-bottom: 51px;
+  }
+}
 .content__header_bikes {
   margin-top: 0;
 }
@@ -1073,6 +1189,12 @@ template {
   height: fit-content;
   margin-bottom: 179px;
   grid-area: C;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__text_workout {
+    margin-bottom: 103px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -2,3 +2,27 @@
   display: flex;
   column-gap: 30px;
 }
+
+@media screen and (max-width: 1439px) {
+  .bikes__types {
+    column-gap: 22px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bikes__types {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .bikes__types {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .bikes__types {
+
+  }
+}

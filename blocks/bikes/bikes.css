@@ -1,3 +1,27 @@
 .bikes {
   padding: 43px 120px 90px 0;
 }
+
+@media screen and (max-width: 1439px) {
+  .bikes {
+    padding: 43px 50px 0 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bikes {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .bikes {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .bikes {
+
+  }
+}

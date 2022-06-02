@@ -2,3 +2,29 @@
   width: 650px;
   height: 460px;
 }
+
+@media screen and (max-width: 1439px) {
+  .merx__image {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .merx__image {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .merx__image {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .merx__image {
+
+  }
+}

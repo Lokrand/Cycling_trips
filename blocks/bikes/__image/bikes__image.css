@@ -3,3 +3,28 @@
   height: 340px;
   margin: 20px 0 0 20px;
 }
+
+@media screen and (max-width: 1439px) {
+  .bikes__image {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bikes__image {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .bikes__image {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .bikes__image {
+
+  }
+}

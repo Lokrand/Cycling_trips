@@ -79,6 +79,10 @@
   --footer-theme-bg-color: #545454;
 }
 
+.bikes__border_night {
+  box-shadow: none;
+}
+
 .highway__button_night {
   background-image: url('../images/highway-navigation-night.svg');
 }
@@ -104,6 +108,34 @@
   top: 347px;
   left: 509px;
 }
+
+@media screen and (max-width: 1439px) {
+  .content__container {
+    width: 600px;
+    height: 400px;
+    top: 420px;
+    left: 342px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .content__bike-image {
+    width: 310px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .content__sticky-container {
+    width: 350px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
 
 // .content__bike-image {
 // }
@@ -205,6 +237,14 @@
   margin-bottom: 83px;
 }
 
+@media screen and (max-width: 1439px) {
+  .content__text_highway {
+    margin-bottom: 51px;
+  }
+}
+
+
+
 .content__header_bikes {
   margin-top: 0;
 }
@@ -219,4 +259,10 @@
   height: fit-content;
   margin-bottom: 179px;
   grid-area: C;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__text_workout {
+    margin-bottom: 103px;
+  }
 }

@@ -4,3 +4,29 @@
   letter-spacing: -0.5px;
   margin-bottom: 258px;
 }
+
+@media screen and (max-width: 1439px) {
+  .merx__title {
+    width: 350px;
+    margin-bottom: 149px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .merx__title {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .merx__title {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .merx__title {
+
+  }
+}

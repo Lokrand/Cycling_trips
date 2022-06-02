@@ -78,3 +78,27 @@
   z-index: 1;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1439px) {
+  .footer__theme {
+    left: 778px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__theme {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .footer__theme {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .footer__theme {
+
+  }
+}

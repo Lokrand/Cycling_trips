@@ -6,30 +6,27 @@
   grid-area: C;
 }
 
-/* @media screen and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .content__description {
-    width: 80px;
-    margin: 80px 250px 209px 0;
+    width: 300px;
+
   }
 }
 
 @media screen and (max-width: 1023px) {
   .content__description {
-    width: 60px;
-    margin: 80px 250px 209px 0;
+
   }
 }
 
 @media screen and (max-width: 799px) {
   .content__description {
-    width: 40px;
-    margin: 80px 250px 209px 0;
+
   }
 }
 
 @media screen and (max-width: 499px) {
   .content__description {
-    width: 20px;
-    margin: 80px 250px 209px 0;
+
   }
-} */
+}

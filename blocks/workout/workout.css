@@ -5,3 +5,28 @@
   padding-right: 120px;
   padding-bottom: 120px;
 }
+
+@media screen and (max-width: 1439px) {
+  .workout {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .workout {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .workout {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .workout {
+
+  }
+}

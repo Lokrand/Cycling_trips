@@ -4,3 +4,27 @@
   height: 836px;
   grid-area: B;
 }
+
+@media screen and (max-width: 1439px) {
+  .content__image {
+    width: 594px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__image {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content__image {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content__image {
+  }
+}
