@@ -10,7 +10,7 @@ const highwayButtonLeft = item.querySelector("#highwayButtonLeft");
 
 const highwayTitles = ["Шоссе", "Грэвел", "ТТ"]
 const highwayTexts = [
-  "На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но&nbsp;тренироваться можно и самостоятельно.",
+  "На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.",
   "Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.",
   "ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный."
 ]
@@ -137,17 +137,8 @@ bl = new BlockManager(
     bikeTypes,
   ]
 )
-// let isDarkMode = false;
-// buttonSwitch.addEventListener('click', () => {
-//   isDarkMode = !isDarkMode;
-// })
-// const templateNight = document.querySelector('#bikes-template_night').content;
+
 function createCard(name, type) {
-  // let userElement;
-  // if (isDarkMode === true) {
-  //   userElement = templateNight.cloneNode(true);
-  // } else {
-  // }
   let userElement = bikesTemplate.cloneNode(true);
   userElement.querySelector(".bikes__image").src = type;
   userElement.querySelector(".bikes__name").textContent = name;

@@ -1,4 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import '../vendor/fonts/fonts.css';
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0;
 }
@@ -414,7 +415,7 @@ template {
 
 .header__link {
   text-decoration: none;
-  color: #151515;
+  color: var(--header-text-color);
   transition: opacity 0.2s linear;
 }
 
@@ -442,10 +443,13 @@ template {
   }
 }
 .content {
-  display: flex;
+  display: grid;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 117px;
   z-index: 1;
+  grid-template-areas: "A B" "C B";
+  column-gap: 250px;
+  row-gap: 44px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -470,13 +474,14 @@ template {
 }
 .content__bike-name {
   font: 400 18px/18px "Inter", sans-serif;
+  color: var(--header-text-color);
 }
 
 .content__button {
   border: none;
   border-radius: 4px;
   letter-spacing: 1px;
-  margin-bottom: 167px;
+  margin-bottom: 170px;
   font: 600 14px/18px "Inter", sans-serif;
   height: 50px;
   width: 180px;
@@ -517,13 +522,11 @@ template {
 }
 
 .content__description {
-  position: relative;
-  left: -1317px;
-  top: 152px;
   width: 460px;
   display: flex;
   flex-direction: column;
-  margin: 80px 250px 209px 0;
+  margin: 0 0 209px 0;
+  grid-area: C;
 }
 
 /* @media screen and (max-width: 1439px) {
@@ -557,9 +560,11 @@ template {
   font: 700 55px/60px "Inter", sans-serif;
   margin-top: 0;
   width: 460px;
+  margin: 82px 0 0 0;
   height: fit-content;
-  color: #151515;
+  color: var(--header-text-color);
   letter-spacing: -0.5px;
+  grid-area: A;
 }
 
 @media screen and (max-width: 499px) {
@@ -570,29 +575,34 @@ template {
 }
 .content__text {
   font: 400 18px/28px "Inter", sans-serif;
-  color: #222222;
-  margin-bottom: 50px;
+  color: var(--text-color);
+  margin-bottom: 53px;
   opacity: 0.7;
 }
 
 .content__line {
   position: absolute;
-  border: 1px solid #D7D4D4;
+  border: 1px solid var(--content-border-line-color);
   width: 132px;
-  top: 550px;
-  left: 209px;
+  top: 631px;
+  left: 222px;
 }
 
 .content__image {
   margin-top: 20px;
   width: 610px;
   height: 836px;
+  grid-area: B;
 }
 
 .content__description_workout {
+  display: grid;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
+  grid-template-areas: "A B" "C B" "D B";
+  column-gap: 160px;
+  /* row-gap: 50px; */
 }
 
 .merx {
@@ -603,7 +613,7 @@ template {
 
 .merx__author {
   font: 500 20px/32px "Inter", sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   margin-bottom: 6px;
 }
 
@@ -613,7 +623,7 @@ template {
 
 .merx__hobbies {
   font: 400 16px/28px "Inter", sans-serif;
-  color: #222222;
+  color: var(--content-text-color);
   opacity: 0.7;
 }
 
@@ -624,13 +634,13 @@ template {
 
 .merx__title {
   font: 600 34px/44px "Inter", sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   letter-spacing: -0.5px;
-  margin-bottom: 262px;
+  margin-bottom: 258px;
 }
 
 .highway {
-  padding-top: 60px;
+  padding-top: 63px;
 }
 
 .highway__button {
@@ -641,8 +651,8 @@ template {
   border-radius: 50px;
   background-image: url("../../../images/highway-navigation.svg");
   background-repeat: no-repeat;
-  background-position: 18px 15px;
-  background-color: #EBEBEB;
+  background-position: 18px 16px;
+  background-color: var(--highway-button-bg-color);
   transition: opacity 0.2s linear;
 }
 
@@ -676,13 +686,13 @@ template {
 }
 
 .highway__navigation {
-  margin: 50px 0 120px;
+  margin: 50px 0 60px;
   display: flex;
   column-gap: 20px;
 }
 
 .bikes {
-  padding: 60px 120px 90px 0;
+  padding: 43px 120px 90px 0;
 }
 
 .bikes__border {
@@ -694,7 +704,7 @@ template {
 .bikes__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 117px;
 }
 
 .bikes__image {
@@ -705,15 +715,15 @@ template {
 
 .bikes__link {
   font: 400 18px/28px "Inter", sans-serif;
-  color: #222222;
+  color: var(--content-text-color);
   opacity: 0.7;
-  margin-left: 40px;
-  margin-top: 32px;
+  margin-left: 41px;
+  margin-top: 26px;
 }
 
 .bikes__link_bold {
   font: 600 18px/28px "Inter", sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   opacity: 1;
 }
 
@@ -724,8 +734,9 @@ template {
 }
 
 .bikes__name {
-  margin: 22px 0 60px;
+  margin: 22px 0 60px 6px;
   font: 600 18px/22px "Inter", sans-serif;
+  color: var(--header-text-color);
 }
 
 .bikes__types {
@@ -744,11 +755,13 @@ template {
 .workout__image {
   width: 580px;
   height: 460px;
+  grid-area: B;
 }
 
 .workout__place {
   font: 600 18px/28px "Inter", sans-serif;
   transition: opacity 0.2s linear;
+  color: var(--header-text-color);
 }
 
 .workout__place:hover {
@@ -759,7 +772,8 @@ template {
 .workout__places {
   display: flex;
   column-gap: 30px;
-  margin-top: 132px;
+  /* margin-top: 132px; */
+  grid-area: D;
 }
 
 .footer {
@@ -775,8 +789,8 @@ template {
 }
 .footer__club-name {
   font: 600 14px/20px "Inter", sans-serif;
-  color: #CFCFCF;
-  margin-top: 100px;
+  color: var(--footer-club-color);
+  margin-top: 97px;
 }
 
 .footer__content {
@@ -789,13 +803,13 @@ template {
   border: 1px solid rgba(199, 199, 199, 0.5);
   border-radius: 4px;
   outline: none;
-  background-color: #EFEFEF;
+  background-color: var(--footer-bg-color);
 }
 
 .footer__email::placeholder {
   padding: 11px 270px 11px 20px;
   font: 500 13px/28px "Inter", sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   opacity: 0.7;
 }
 
@@ -806,8 +820,8 @@ template {
 }
 .footer__theme {
   position: absolute;
-  top: -19px;
-  left: 1030px;
+  top: -32px;
+  left: 1112px;
   display: inline-block;
   height: 28px;
   line-height: 28px;
@@ -827,7 +841,7 @@ template {
   height: 24px;
   border-radius: 9999px;
   vertical-align: top;
-  background: #fff;
+  background: var(--footer-theme-bg-color);
   transition: 0.2s;
 }
 
@@ -866,7 +880,7 @@ template {
   background: url("../../../images/day.svg");
   position: absolute;
   top: -2px;
-  left: -44px;
+  left: -50px;
   z-index: 1;
   cursor: pointer;
 }
@@ -880,7 +894,7 @@ template {
   background-size: 20px 20px;
   position: absolute;
   top: 2px;
-  left: 62px;
+  left: 66px;
   z-index: 1;
   cursor: pointer;
 }
@@ -888,8 +902,9 @@ template {
 .footer__title {
   width: 229px;
   font: 600 24px/32px "Inter", sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   margin-bottom: 50px;
+  margin-top: 1px;
 }
 
 @media screen and (max-width: 499px) {
@@ -901,72 +916,29 @@ template {
 :root {
   --bg-color: #f4f4f4;
   --footer-bg-color: #EFEFEF;
+  --header-text-color: #151515;
+  --content-text-color: #222222;
+  --text-color: #222222;
+  --footer-club-color: #CFCFCF;
+  --content-border-line-color: #D7D4D4;
+  --highway-button-bg-color: #EBEBEB;
+  --footer-theme-bg-color: #fff;
 }
 
 .body_night {
   --bg-color: #333;
   --footer-bg-color: #2F2F2F;
-}
-
-.content__header_night {
-  color: #FFFFFF;
-}
-
-.content__text_night {
-  color: #E6E6E6;
-}
-
-.content__bike-name_night {
-  color: #FFFFFF;
-}
-
-.content__line_night {
-  border-color: #707070;
+  --header-text-color: #FFFFFF;
+  --content-text-color: #E5E5E5;
+  --text-color: #E6E6E6;
+  --footer-club-color: #565656;
+  --content-border-line-color: #707070;
+  --highway-button-bg-color: #434343;
+  --footer-theme-bg-color: #545454;
 }
 
 .highway__button_night {
-  background-color: #434343;
   background-image: url("../images/highway-navigation-night.svg");
-}
-
-.header__link_night {
-  color: #FFFFFF;
-}
-
-.merx__title_night {
-  color: #FFFFFF;
-}
-
-.merx__author_night {
-  color: #FFFFFF;
-}
-
-.merx__hobbies_night {
-  color: #E5E5E5;
-}
-
-.footer__title_night {
-  color: #FFFFFF;
-}
-
-.footer__club-name_night {
-  color: #565656;
-}
-
-.workout__place_night {
-  color: #FFFFFF;
-}
-
-.bikes__name_night {
-  color: #FFFFFF;
-}
-
-.bikes__link_night {
-  color: #E5E5E5;
-}
-
-.bikes__link_bold_night {
-  color: #FFFFFF;
 }
 
 .footer__theme-switch_nigth::after {
@@ -977,16 +949,7 @@ template {
   background: url("../images/day-dark.svg");
 }
 
-.footer__theme_night .footer__theme-switch_nigth {
-  background: #545454;
-}
-
-.footer__email_night {
-  background-color: #2F2F2F;
-}
-
 .footer__email_night::placeholder {
-  color: #FFFFFF;
   opacity: 0.5;
 }
 
@@ -1085,6 +1048,31 @@ template {
 .content__block {
   display: flex;
   column-gap: 250px;
+}
+
+.content__header_highway {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.content__text_highway {
+  margin-bottom: 83px;
+}
+
+.content__header_bikes {
+  margin-top: 0;
+}
+
+.content__header_workout {
+  margin-top: 3px;
+  margin-bottom: 41px;
+  grid-area: A;
+}
+
+.content__text_workout {
+  height: fit-content;
+  margin-bottom: 179px;
+  grid-area: C;
 }
 
 /*# sourceMappingURL=index.css.map */

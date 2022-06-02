@@ -1,6 +1,6 @@
 .merx__title {
   font: 600 34px/44px 'Inter', sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   letter-spacing: -0.5px;
-  margin-bottom: 262px;
+  margin-bottom: 258px;
 }

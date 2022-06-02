@@ -1,8 +1,13 @@
 .content {
-  display: flex;
+  display: grid;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 117px;
   z-index: 1;
+  grid-template-areas:
+  "A B"
+  "C B";
+  column-gap: 250px;
+  row-gap: 44px;
 }
 
 @media screen and (max-width: 1439px) {

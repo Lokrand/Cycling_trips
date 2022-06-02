@@ -1,20 +1,29 @@
 @font-face {
-  font-family: 'Golos';
+  font-family: 'Inter';
   font-weight: 400;
-  src:  url('./Golos Web/Golos-Text_Regular.woff2'),
-        url('./Golos Web/Golos-Text_Regular.woff');
+  src:  url('./Inter Web/Inter-Regular.woff2'),
+        url('./Inter Web/Inter-Regular.woff');
 }
 
 @font-face {
-  font-family: 'Golos';
+  font-family: 'Inter';
   font-weight: 500;
-  src:  url('./Golos Web/Golos-Text_Medium.woff2'),
-        url('./Golos Web/Golos-Text_Medium.woff');
+  src:  url('./Inter Web/Inter-Medium.woff2'),
+        url('./Inter Web/Inter-Medium.woff');
 }
 
 @font-face {
-  font-family: 'Golos';
+  font-family: 'Inter';
+  font-weight: 600;
+  src:  url('./Inter Web/Inter-SemiBold.woff2'),
+        url('./Inter Web/Inter-SemiBold.woff');
+}
+
+
+
+@font-face {
+  font-family: 'Inter';
   font-weight: 700;
-  src:  url('./Golos Web/Golos-Text_Bold.woff2'),
-        url('./Golos Web/Golos-Text_Bold.woff');
+  src:  url('./Inter Web/Inter-Bold.woff2'),
+        url('./Inter Web/Inter-Bold.woff');
 }

@@ -1,11 +1,9 @@
 .content__description {
-  position: relative;
-  left: -1317px;
-  top: 152px;
   width: 460px;
   display: flex;
   flex-direction: column;
-  margin: 80px 250px 209px 0;
+  margin: 0 0 209px 0;
+  grid-area: C;
 }
 
 /* @media screen and (max-width: 1439px) {

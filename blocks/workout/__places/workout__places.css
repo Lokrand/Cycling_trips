@@ -1,5 +1,6 @@
 .workout__places {
   display: flex;
   column-gap: 30px;
-  margin-top: 132px;
+  /* margin-top: 132px; */
+  grid-area: D;
 }

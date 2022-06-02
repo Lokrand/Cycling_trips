@@ -1,6 +1,7 @@
 @import '../vendor/normalize';
 @import '../blocks/main/main';
 @import '../blocks/body/body';
+@import '../vendor/fonts/fonts.css';
 
 @import '../blocks/header/header';
 @import '../blocks/header/__item/header__item';
@@ -57,79 +58,29 @@
 :root {
   --bg-color: #f4f4f4;
   --footer-bg-color: #EFEFEF;
+  --header-text-color: #151515;
+  --content-text-color: #222222;
+  --text-color: #222222;
+  --footer-club-color: #CFCFCF;
+  --content-border-line-color: #D7D4D4;
+  --highway-button-bg-color: #EBEBEB;
+  --footer-theme-bg-color: #fff;
 }
-
-
-
-
-
-
-
-
-
 
 .body_night {
   --bg-color: #333;
   --footer-bg-color: #2F2F2F;
-}
-
-.content__header_night {
-  color: #FFFFFF;
-}
-
-.content__text_night {
-  color: #E6E6E6;
-}
-
-.content__bike-name_night {
-  color: #FFFFFF;
-}
-
-.content__line_night {
-  border-color: #707070;
+  --header-text-color: #FFFFFF;
+  --content-text-color: #E5E5E5;
+  --text-color: #E6E6E6;
+  --footer-club-color: #565656;
+  --content-border-line-color: #707070;
+  --highway-button-bg-color: #434343;
+  --footer-theme-bg-color: #545454;
 }
 
 .highway__button_night {
-  background-color: #434343;
   background-image: url('../images/highway-navigation-night.svg');
-}
-
-.header__link_night {
-  color: #FFFFFF;
-}
-.merx__title_night {
-  color: #FFFFFF;
-}
-
-.merx__author_night {
-  color: #FFFFFF;
-}
-
-.merx__hobbies_night {
-  color: #E5E5E5;
-}
-
-.footer__title_night {
-  color: #FFFFFF;
-}
-
-.footer__club-name_night {
-  color: #565656;
-}
-
-.workout__place_night {
-  color: #FFFFFF;
-}
-
-.bikes__name_night {
-  color: #FFFFFF;
-}
-
-.bikes__link_night {
-  color: #E5E5E5;
-}
-.bikes__link_bold_night {
-  color: #FFFFFF;
 }
 
 .footer__theme-switch_nigth::after {
@@ -139,16 +90,8 @@
 .footer__theme_night::before {
   background: url('../images/day-dark.svg');
 }
-.footer__theme_night .footer__theme-switch_nigth {
-  background: #545454;
-}
-
-.footer__email_night {
-  background-color: #2F2F2F;
-}
 
 .footer__email_night::placeholder {
-  color: #FFFFFF;
   opacity: .5;
 }
 
@@ -251,4 +194,29 @@
 .content__block {
   display: flex;
   column-gap: 250px;
+}
+
+.content__header_highway {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.content__text_highway {
+  margin-bottom: 83px;
+}
+
+.content__header_bikes {
+  margin-top: 0;
+}
+
+.content__header_workout {
+  margin-top: 3px;
+  margin-bottom: 41px;
+  grid-area: A;
+}
+
+.content__text_workout {
+  height: fit-content;
+  margin-bottom: 179px;
+  grid-area: C;
 }

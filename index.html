@@ -21,10 +21,8 @@
     </header>
   <div class="main">
     <section class="content">
-      <div class="content__block">
-        <h2 class="content__header">Шоссе, ТТ и&nbsp;Грэвел</h2>
-        <img src="./images/Placeholder.png" alt="Природа лесных гор" class="content__image">
-      </div>
+      <h2 class="content__header">Шоссе, ТТ и&nbsp;Грэвел</h2>
+      <img src="./images/Placeholder.png" alt="Природа лесных гор" class="content__image">
       <div class="content__description">
         <p class="content__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам –
           нужно только определиться с выбором велосипеда и отправиться в путь.</p>
@@ -49,22 +47,22 @@
     <section class="highway" id="highway">
       <template id="highway-template">
         <div class="highway__content">
-          <h2 class="content__header" id="highway-title"></h2>
-          <p class="content__text"></p>
-        </div>
-        <div class="highway__gallery">
-          <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-1">
-          <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-2">
-        </div>
-        <div class="highway__navigation">
-          <button type="button" class="highway__button" id="highwayButtonLeft"></button>
-          <button type="button" class="highway__button" id="highwayButtonRight"></button>
+          <h2 class="content__header content__header_highway" id="highway-title"></h2>
+          <p class="content__text content__text_highway"></p>
+          <div class="highway__gallery">
+            <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-1">
+            <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-2">
+          </div>
+          <div class="highway__navigation">
+            <button type="button" class="highway__button" id="highwayButtonLeft"></button>
+            <button type="button" class="highway__button" id="highwayButtonRight"></button>
+          </div>
         </div>
       </template>
     </section>
     <section class="bikes" id="bikes">
       <div class="bikes__header">
-        <h2 class="content__header">Велосипеды</h2>
+        <h2 class="content__header content__header_bikes">Велосипеды</h2>
         <ul class="bikes__links">
           <li class="bikes__link bikes__link_bold">Шоссе</li>
           <li class="bikes__link">Грэвел</li>
@@ -80,27 +78,19 @@
             <p class="bikes__name"></p>
           </div>
         </template>
-        <!-- <template id="bikes-template_night">
-          <div class="bikes__type">
-            <div class="bikes__border">
-              <img src="./images/bike-1.png" alt="Велосипед" class="bikes__image">
-            </div>
-            <p class="bikes__name bikes__name_night"></p>
-          </div>
-        </template> -->
       </div>
     </section>
     <section class="workout" id="workout">
       <div class="content__description content__description_workout">
-        <h2 class="content__header">Тренировки</h2>
-        <p class="content__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+        <h2 class="content__header content__header_workout">Тренировки</h2>
+        <img src="./images/workout-road.png" alt="Холмистая дорога" class="workout__image">
+        <p class="content__text content__text_workout">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
           а записать эти тренировки поможет приложение Strava, а также это&nbsp;приложение позволит построить тренировочный&nbsp;план.</p>
         <div class="workout__places">
           <p class="workout__place">Strava</p>
           <p class="workout__place">Komoot</p>
         </div>
       </div>
-      <img src="./images/workout-road.png" alt="Холмистая дорога" class="workout__image">
     </section>
   </div>
     <footer class="footer">

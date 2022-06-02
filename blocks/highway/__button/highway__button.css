@@ -6,8 +6,8 @@
   border-radius: 50px;
   background-image: url('../../../images/highway-navigation.svg');
   background-repeat: no-repeat;
-  background-position: 18px 15px;
-  background-color: #EBEBEB;
+  background-position: 18px 16px;
+  background-color: var(--highway-button-bg-color);
   transition: opacity .2s linear;
 }
 

@@ -1,6 +1,7 @@
 .workout__place {
   font: 600 18px/28px 'Inter', sans-serif;
   transition: opacity .2s linear;
+  color: var(--header-text-color);
 }
 
 .workout__place:hover {

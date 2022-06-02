@@ -2,9 +2,11 @@
   font: 700 55px/60px 'Inter',sans-serif;
   margin-top: 0;
   width: 460px;
+  margin: 82px 0 0 0;
   height: fit-content;
-  color: #151515;
+  color: var(--header-text-color);
   letter-spacing: -0.5px;
+  grid-area: A;
 }
 
 @media screen and (max-width: 1439px) {

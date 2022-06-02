@@ -1,5 +1,5 @@
 .footer__club-name {
   font: 600 14px/20px 'Inter', sans-serif;
-  color: #CFCFCF;
-  margin-top: 100px;
+  color: var(--footer-club-color);
+  margin-top: 97px;
 }

@@ -1,5 +1,5 @@
 .bikes__link_bold {
   font: 600 18px/28px 'Inter', sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   opacity: 1;
 }

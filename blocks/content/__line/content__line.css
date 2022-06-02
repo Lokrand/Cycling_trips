@@ -1,7 +1,7 @@
 .content__line {
   position: absolute;
-  border: 1px solid #D7D4D4;
+  border: 1px solid var(--content-border-line-color);
   width: 132px;
-  top: 550px;
-  left: 209px;
+  top: 631px;
+  left: 222px;
 }

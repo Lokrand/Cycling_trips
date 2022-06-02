@@ -1,7 +1,7 @@
 .footer__theme {
   position: absolute;
-  top: -19px;
-  left: 1030px;
+  top: -32px;
+  left: 1112px;
 	display: inline-block;
 	height: 28px;
 	line-height: 28px;
@@ -21,7 +21,7 @@
 	height: 24px;
 	border-radius: 9999px;
 	vertical-align: top;
-	background: #fff;
+	background: var(--footer-theme-bg-color);
 	transition: .2s;
 }
 
@@ -60,7 +60,7 @@
   background: url('../../../images/day.svg');
   position: absolute;
   top: -2px;
-  left: -44px;
+  left: -50px;
   z-index: 1;
   cursor: pointer;
 }
@@ -74,7 +74,7 @@
   background-size: 20px 20px;
   position: absolute;
   top: 2px;
-  left: 62px;
+  left: 66px;
   z-index: 1;
   cursor: pointer;
 }

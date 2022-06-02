@@ -1,8 +1,9 @@
 .footer__title {
   width: 229px;
   font: 600 24px/32px 'Inter', sans-serif;
-  color: #151515;
+  color: var(--header-text-color);
   margin-bottom: 50px;
+  margin-top: 1px;
 }
 
 @media screen and (max-width: 1439px) {
