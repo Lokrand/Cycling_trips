@@ -1,0 +1,40 @@
+.footer__email {
+  width: 358px;
+  height: 48px;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  outline: none;
+  background-color: #EFEFEF;
+}
+
+.footer__email::placeholder {
+  padding: 11px 270px 11px 20px;
+  font: 500 13px/28px 'Inter', sans-serif;
+  color: #151515;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer__email {
+
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__email {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .footer__email {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .footer__email {
+    width: 284px;
+  }
+}
+

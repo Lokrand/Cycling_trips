@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  position: relative;
+  margin-bottom: 120px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1439px) {
+  .content {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content {
+    margin-bottom: 20px;
+  }
+}

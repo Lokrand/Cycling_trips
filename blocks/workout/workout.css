@@ -1,0 +1,7 @@
+.workout {
+  display: flex;
+  column-gap: 160px;
+  padding-top: 60px;
+  padding-right: 120px;
+  padding-bottom: 120px;
+}

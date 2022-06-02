@@ -1,0 +1,5 @@
+.highway__navigation {
+  margin: 50px 0 120px;
+  display: flex;
+  column-gap: 20px;
+}

@@ -1,0 +1,29 @@
+.footer {
+  padding: 80px 120px 60px 120px;
+  position: relative;
+  background-color: #EFEFEF;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer {
+
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .footer {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .footer {
+    padding: 60px 0 25px;
+  }
+}

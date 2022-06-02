@@ -1,0 +1,5 @@
+.merx {
+  display: flex;
+  padding: 0 120px 60px 0;
+  column-gap: 80px;
+}

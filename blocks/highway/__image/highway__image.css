@@ -1,0 +1,9 @@
+.highway__image {
+  height: 400px;
+  width: 650px;
+}
+
+.highway__image:last-child {
+  width: 630px;
+  object-fit: cover;
+}

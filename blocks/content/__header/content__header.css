@@ -1,0 +1,32 @@
+.content__header {
+  font: 700 55px/60px 'Inter',sans-serif;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #151515;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__header {
+
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__header {
+
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content__header {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content__header {
+    font: 700 32px/40px 'Inter',sans-serif;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,35 @@
+.body {
+  color: #151515;
+  background-color: #F4F4F4;
+  width: 1440px;
+  padding: 0 calc((100% - 1440px)/2);
+}
+
+@media screen and (max-width: 1439px) {
+  .body {
+    width: 1024px;
+    padding: 0 calc((100% - 1024px)/2);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .body {
+    width: 800px;
+    padding: 0 calc((100% - 800px)/2);
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .body {
+    width: 500px;
+    padding: 0 calc((100% - 500px)/2);
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .body {
+    width: 320px;
+    padding: 0 calc((100% - 320px)/2);
+
+  }
+}

@@ -1,0 +1,12 @@
+.header__menu {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 28px 120px 28px 0;
+
+}

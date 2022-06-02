@@ -1,0 +1,9 @@
+.workout__place {
+  font: 600 18px/28px 'Inter', sans-serif;
+  transition: opacity .2s linear;
+}
+
+.workout__place:hover {
+  cursor: pointer;
+  opacity: .65;
+}
