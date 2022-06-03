@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 799px) {
   .merx__image {
-
+    width: 460px;
   }
 }
 

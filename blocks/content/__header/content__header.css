@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 799px) {
   .content__header {
-
+    width: 460px;
   }
 }
 

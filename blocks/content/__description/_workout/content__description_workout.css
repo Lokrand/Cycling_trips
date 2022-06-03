@@ -25,7 +25,11 @@
 
 @media screen and (max-width: 799px) {
   .content__description_workout {
-
+    grid-template-areas:
+    "A"
+    "B"
+    "C"
+    "D";
   }
 }
 

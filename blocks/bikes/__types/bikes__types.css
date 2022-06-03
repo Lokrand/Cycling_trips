@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 799px) {
   .bikes__types {
-
+    flex-direction: column;
   }
 }
 

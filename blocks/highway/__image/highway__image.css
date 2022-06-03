@@ -27,7 +27,12 @@
 
 @media screen and (max-width: 799px) {
   .highway__image {
-
+    width: 460px;
+    height: 320px;
+    margin-bottom: 40px;
+  }
+  .highway__image:last-child {
+    display: none;
   }
 }
 

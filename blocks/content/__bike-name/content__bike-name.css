@@ -2,3 +2,9 @@
   font: 400 18px/18px 'Inter',sans-serif;
   color: var(--header-text-color);
 }
+
+@media screen and (max-width: 799px) {
+  .content__bike-name {
+    display: none;
+  }
+}

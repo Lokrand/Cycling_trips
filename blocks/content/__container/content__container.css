@@ -25,3 +25,16 @@
     left: 278px;
   }
 }
+
+@media screen and (max-width: 799px) {
+  .content__container {
+    width: 458px;
+    top: 460px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content__container {
+  }
+}

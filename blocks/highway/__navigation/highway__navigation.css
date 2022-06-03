@@ -18,7 +18,8 @@
 
 @media screen and (max-width: 799px) {
   .highway__navigation {
-
+    grid-area: B;
+    margin: 0;
   }
 }
 

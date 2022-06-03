@@ -28,6 +28,10 @@
 @media screen and (max-width: 799px) {
   .content {
     margin-bottom: 40px;
+    grid-template-areas:
+    "A"
+    "B"
+    "C";
   }
 }
 

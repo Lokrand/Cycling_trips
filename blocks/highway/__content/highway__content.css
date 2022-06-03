@@ -11,7 +11,12 @@
 
 @media screen and (max-width: 799px) {
   .highway__content {
-
+    display: grid;
+    grid-template-areas:
+    "A B"
+    "C C"
+    "D D";
+    column-gap: 180px;
   }
 }
 

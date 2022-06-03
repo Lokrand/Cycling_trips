@@ -1,3 +1,16 @@
 .merx__content {
   width: 470px;
 }
+
+@media screen and (max-width: 799px) {
+  .merx__content {
+    width: 460px;
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .merx__content {
+
+  }
+}
