@@ -16,7 +16,9 @@
 
 @media screen and (max-width: 1023px) {
   .content__line {
-
+    width: 50px;
+    top: 476px;
+    left: 206px;
   }
 }
 

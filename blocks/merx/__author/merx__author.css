@@ -3,3 +3,22 @@
   color: var(--header-text-color);
   margin-bottom: 6px;
 }
+
+@media screen and (max-width: 1023px) {
+  .merx__author {
+    font: 500 18px/28px 'Inter', sans-serif;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .merx__author {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .merx__author {
+
+  }
+}

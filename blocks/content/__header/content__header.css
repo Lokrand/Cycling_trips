@@ -18,7 +18,9 @@
 
 @media screen and (max-width: 1023px) {
   .content__header {
-
+    width: 280px;
+    margin: 40px 0 0 0;
+    font: 700 50px/55px 'Inter',sans-serif;
   }
 }
 

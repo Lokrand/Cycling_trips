@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 1023px) {
   .bikes__types {
-
+    column-gap: 10px;
   }
 }
 

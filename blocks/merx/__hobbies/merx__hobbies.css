@@ -3,3 +3,22 @@
   color: var(--content-text-color);
   opacity: 0.7;
 }
+
+@media screen and (max-width: 1023px) {
+  .merx__hobbies {
+    font: 400 14px/24px 'Inter', sans-serif;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .merx__hobbies {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .merx__hobbies {
+
+  }
+}

@@ -12,7 +12,8 @@
 
 @media screen and (max-width: 1023px) {
   .merx__image {
-
+    width: 400px;
+    height: 300px;
   }
 }
 

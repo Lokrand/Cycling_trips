@@ -3,3 +3,21 @@
   height: 460px;
   grid-area: B;
 }
+
+@media screen and (max-width: 1023px) {
+  .workout__image {
+    width: 430px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .workout__image {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .workout__image {
+
+  }
+}

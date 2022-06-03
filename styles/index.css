@@ -1,5 +1,8 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 @import '../vendor/fonts/fonts.css';
+@import '../blocks/content/__container/content__container.css';
+@import '../blocks/content/__bike-image/content__bike-image.css';
+@import '../blocks/content/__sticky-container/content__sticky-container.css';
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0;
 }
@@ -441,6 +444,11 @@ template {
     padding: 20px 60px 20px 0;
   }
 }
+@media screen and (max-width: 1023px) {
+  .header__menu {
+    padding: 20px 30px 20px 0;
+  }
+}
 @media screen and (max-width: 499px) {
   .header__menu {
     display: none;
@@ -465,7 +473,9 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .content {
-    margin-bottom: 60px;
+    margin-bottom: 0;
+    column-gap: 20px;
+    row-gap: 30px;
   }
 }
 @media screen and (max-width: 799px) {
@@ -527,6 +537,11 @@ template {
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+@media screen and (max-width: 1023px) {
+  .content__button {
+    margin-bottom: 25px;
+  }
+}
 .content__description {
   width: 460px;
   display: flex;
@@ -538,6 +553,11 @@ template {
 @media screen and (max-width: 1439px) {
   .content__description {
     width: 300px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .content__description {
+    width: 280px;
   }
 }
 .content__header {
@@ -557,6 +577,13 @@ template {
     margin: 40px 0 0 0;
   }
 }
+@media screen and (max-width: 1023px) {
+  .content__header {
+    width: 280px;
+    margin: 40px 0 0 0;
+    font: 700 50px/55px "Inter", sans-serif;
+  }
+}
 @media screen and (max-width: 499px) {
   .content__header {
     font: 700 32px/40px "Inter", sans-serif;
@@ -570,6 +597,11 @@ template {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 1023px) {
+  .content__text {
+    margin-bottom: 25px;
+  }
+}
 .content__line {
   position: absolute;
   border: 1px solid var(--content-border-line-color);
@@ -585,6 +617,13 @@ template {
     left: 213px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .content__line {
+    width: 50px;
+    top: 476px;
+    left: 206px;
+  }
+}
 .content__image {
   margin-top: 20px;
   width: 610px;
@@ -596,6 +635,12 @@ template {
   .content__image {
     width: 594px;
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .content__image {
+    width: 440px;
+    height: 600px;
   }
 }
 .content__description_workout {
@@ -613,6 +658,11 @@ template {
     column-gap: 64px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .content__description_workout {
+    column-gap: 30px;
+  }
+}
 .merx {
   display: flex;
   padding: 0 120px 60px 0;
@@ -625,12 +675,23 @@ template {
     column-gap: 50px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .merx {
+    padding: 0;
+    column-gap: 30px;
+  }
+}
 .merx__author {
   font: 500 20px/32px "Inter", sans-serif;
   color: var(--header-text-color);
   margin-bottom: 6px;
 }
 
+@media screen and (max-width: 1023px) {
+  .merx__author {
+    font: 500 18px/28px "Inter", sans-serif;
+  }
+}
 .merx__content {
   width: 470px;
 }
@@ -641,6 +702,11 @@ template {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 1023px) {
+  .merx__hobbies {
+    font: 400 14px/24px "Inter", sans-serif;
+  }
+}
 .merx__image {
   width: 650px;
   height: 460px;
@@ -650,6 +716,12 @@ template {
   .merx__image {
     width: 500px;
     height: 400px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .merx__image {
+    width: 400px;
+    height: 300px;
   }
 }
 .merx__title {
@@ -663,6 +735,13 @@ template {
   .merx__title {
     width: 350px;
     margin-bottom: 149px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .merx__title {
+    font: 600 28px/38px "Inter", sans-serif;
+    width: 310px;
+    margin-bottom: 78px;
   }
 }
 .highway {
@@ -696,6 +775,11 @@ template {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 1023px) {
+  .highway__content {
+    margin-bottom: 20px;
+  }
+}
 .highway__gallery {
   display: flex;
   column-gap: 40px;
@@ -704,6 +788,11 @@ template {
 @media screen and (max-width: 1439px) {
   .highway__gallery {
     column-gap: 32px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .highway__gallery {
+    column-gap: 20px;
   }
 }
 .highway__image {
@@ -722,6 +811,16 @@ template {
     width: 440px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .highway__image {
+    height: 280px;
+    width: 360px;
+  }
+
+  .highway__image:last-child {
+    width: 360px;
+  }
+}
 .highway__navigation {
   margin: 50px 0 60px;
   display: flex;
@@ -733,6 +832,11 @@ template {
     margin: 30px 0;
   }
 }
+@media screen and (max-width: 1023px) {
+  .highway__navigation {
+    margin: 20px 0;
+  }
+}
 .bikes {
   padding: 43px 120px 90px 0;
 }
@@ -740,6 +844,11 @@ template {
 @media screen and (max-width: 1439px) {
   .bikes {
     padding: 43px 50px 0 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bikes {
+    padding: 43px 20px 0 0;
   }
 }
 .bikes__border {
@@ -756,6 +865,12 @@ template {
     height: 300px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .bikes__border {
+    width: 240px;
+    height: 240px;
+  }
+}
 .bikes__header {
   display: flex;
   justify-content: space-between;
@@ -765,6 +880,11 @@ template {
 @media screen and (max-width: 1439px) {
   .bikes__header {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bikes__header {
+    margin-bottom: 40px;
   }
 }
 .bikes__image {
@@ -777,6 +897,13 @@ template {
   .bikes__image {
     width: 260px;
     height: 260px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bikes__image {
+    width: 210px;
+    height: 210px;
+    margin: 15px 0 0 15px;
   }
 }
 .bikes__link {
@@ -805,6 +932,12 @@ template {
   color: var(--header-text-color);
 }
 
+@media screen and (max-width: 1023px) {
+  .bikes__name {
+    margin: 22px 0 20px 6px;
+    font: 600 16px/20px "Inter", sans-serif;
+  }
+}
 .bikes__types {
   display: flex;
   column-gap: 30px;
@@ -813,6 +946,11 @@ template {
 @media screen and (max-width: 1439px) {
   .bikes__types {
     column-gap: 22px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bikes__types {
+    column-gap: 10px;
   }
 }
 .workout {
@@ -835,6 +973,11 @@ template {
   grid-area: B;
 }
 
+@media screen and (max-width: 1023px) {
+  .workout__image {
+    width: 430px;
+  }
+}
 .workout__place {
   font: 600 18px/28px "Inter", sans-serif;
   transition: opacity 0.2s linear;
@@ -864,6 +1007,11 @@ template {
     padding: 60px 80px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding: 40px 60px;
+  }
+}
 @media screen and (max-width: 499px) {
   .footer {
     padding: 60px 0 25px;
@@ -875,6 +1023,11 @@ template {
   margin-top: 97px;
 }
 
+@media screen and (max-width: 1023px) {
+  .footer__club-name {
+    margin-top: 50px;
+  }
+}
 .footer__content {
   position: relative;
 }
@@ -986,6 +1139,12 @@ template {
     left: 778px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .footer__theme {
+    left: 580px;
+    top: -30px;
+  }
+}
 .footer__title {
   width: 229px;
   font: 600 24px/32px "Inter", sans-serif;
@@ -1042,54 +1201,6 @@ template {
 
 .footer__email_night::placeholder {
   opacity: 0.5;
-}
-
-.content__container {
-  position: absolute;
-  width: 810px;
-  height: 430px;
-  border: 1px solid red;
-  z-index: 2;
-  top: 347px;
-  left: 509px;
-}
-
-@media screen and (max-width: 1439px) {
-  .content__container {
-    width: 600px;
-    height: 400px;
-    top: 420px;
-    left: 342px;
-  }
-}
-@media screen and (max-width: 1439px) {
-  .content__bike-image {
-    width: 310px;
-    height: 260px;
-  }
-}
-@media screen and (max-width: 1439px) {
-  .content__sticky-container {
-    width: 350px;
-    padding: 10px 20px;
-  }
-}
-.content__bike-image {
-  width: 340px;
-  height: 260px;
-  object-fit: cover;
-}
-.content__sticky-container {
-  position: sticky;
-  box-sizing: border-box;
-  background-color: #F4F4F4;
-  top: 52px;
-  width: 440px;
-  padding: 20px 50px;
-  border-radius: 20px;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
-  z-index: 3;
-  cursor: pointer;
 }
 
 .footer__logo-mobile {
@@ -1166,6 +1277,11 @@ template {
   margin-bottom: 44px;
 }
 
+@media screen and (max-width: 1023px) {
+  .content__header_highway {
+    margin-bottom: 30px;
+  }
+}
 .content__text_highway {
   margin-bottom: 83px;
 }
@@ -1173,6 +1289,11 @@ template {
 @media screen and (max-width: 1439px) {
   .content__text_highway {
     margin-bottom: 51px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .content__text_highway {
+    margin-bottom: 40px;
   }
 }
 .content__header_bikes {
@@ -1185,6 +1306,11 @@ template {
   grid-area: A;
 }
 
+@media screen and (max-width: 1023px) {
+  .content__header_workout {
+    margin-top: 0;
+  }
+}
 .content__text_workout {
   height: fit-content;
   margin-bottom: 179px;
@@ -1194,6 +1320,11 @@ template {
 @media screen and (max-width: 1439px) {
   .content__text_workout {
     margin-bottom: 103px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .content__text_workout {
+    margin-bottom: 68px;
   }
 }
 

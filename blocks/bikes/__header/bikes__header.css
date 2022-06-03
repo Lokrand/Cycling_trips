@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 1023px) {
   .bikes__header {
-
+    margin-bottom: 40px;
   }
 }
 

@@ -13,7 +13,9 @@
 
 @media screen and (max-width: 1023px) {
   .bikes__image {
-
+    width: 210px;
+    height: 210px;
+    margin: 15px 0 0 15px;
   }
 }
 

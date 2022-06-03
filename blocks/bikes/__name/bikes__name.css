@@ -3,3 +3,22 @@
   font: 600 18px/22px 'Inter', sans-serif;
   color: var(--header-text-color);
 }
+
+@media screen and (max-width: 1023px) {
+  .bikes__name {
+    margin: 22px 0 20px 6px;
+    font: 600 16px/20px 'Inter', sans-serif;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .bikes__name {
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .bikes__name {
+
+  }
+}

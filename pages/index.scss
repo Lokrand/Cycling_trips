@@ -17,6 +17,9 @@
 @import '../blocks/content/__line/content__line';
 @import '../blocks/content/__image/content__image';
 @import '../blocks/content/__description/_workout/content__description_workout';
+@import '../blocks/content/__container/content__container.css';
+@import '../blocks/content/__bike-image/content__bike-image.css';
+@import '../blocks/content/__sticky-container/content__sticky-container.css';
 
 @import '../blocks/merx/merx';
 @import '../blocks/merx/__author/merx__author';
@@ -99,66 +102,9 @@
   opacity: .5;
 }
 
-.content__container {
-  position: absolute;
-  width: 810px;
-  height: 430px;
-  border: 1px solid red;
-  z-index: 2;
-  top: 347px;
-  left: 509px;
-}
-
-@media screen and (max-width: 1439px) {
-  .content__container {
-    width: 600px;
-    height: 400px;
-    top: 420px;
-    left: 342px;
-  }
-}
-
-@media screen and (max-width: 1439px) {
-  .content__bike-image {
-    width: 310px;
-    height: 260px;
-  }
-}
-
-@media screen and (max-width: 1439px) {
-  .content__sticky-container {
-    width: 350px;
-    padding: 10px 20px;
-  }
-}
-
-
-
-
-
-
-// .content__bike-image {
-// }
-.content {
-  &__bike-image {
-    width: 340px;
-    height: 260px;
-    object-fit: cover;
-  }
-  &__sticky-container {
-    position: sticky;
-    box-sizing: border-box;
-    background-color: #F4F4F4;
-    top: 52px;
-    width: 440px;
-    padding: 20px 50px;
-    border-radius: 20px;
-    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
-    z-index: 3;
-    cursor: pointer;
-  }
-}
-// .content__sticky-container {
+// .content {
+//   &__sticky-container {
+//   }
 // }
 
 .footer__logo-mobile {
@@ -233,6 +179,15 @@
   margin-bottom: 44px;
 }
 
+@media screen and (max-width: 1023px) {
+  .content__header_highway {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
 .content__text_highway {
   margin-bottom: 83px;
 }
@@ -240,6 +195,12 @@
 @media screen and (max-width: 1439px) {
   .content__text_highway {
     margin-bottom: 51px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__text_highway {
+    margin-bottom: 40px;
   }
 }
 
@@ -255,6 +216,14 @@
   grid-area: A;
 }
 
+@media screen and (max-width: 1023px) {
+  .content__header_workout {
+    margin-top: 0;
+  }
+}
+
+
+
 .content__text_workout {
   height: fit-content;
   margin-bottom: 179px;
@@ -264,5 +233,11 @@
 @media screen and (max-width: 1439px) {
   .content__text_workout {
     margin-bottom: 103px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__text_workout {
+    margin-bottom: 68px;
   }
 }

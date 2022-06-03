@@ -1,0 +1,26 @@
+.content__sticky-container {
+  position: sticky;
+  box-sizing: border-box;
+  background-color: #F4F4F4;
+  top: 52px;
+  width: 440px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  z-index: 3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__sticky-container {
+    width: 350px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__sticky-container {
+    width: 300px;
+    padding: 10px 20px;
+  }
+}

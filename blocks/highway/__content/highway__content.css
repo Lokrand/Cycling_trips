@@ -2,3 +2,22 @@
   width: 460px;
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: 1023px) {
+  .highway__content {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .highway__content {
+
+  }
+}
+
+
+@media screen and (max-width: 499px) {
+  .highway__content {
+
+  }
+}

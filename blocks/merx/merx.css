@@ -13,7 +13,8 @@
 
 @media screen and (max-width: 1023px) {
   .merx {
-
+    padding: 0;
+    column-gap: 30px;
   }
 }
 

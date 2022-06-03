@@ -1,0 +1,27 @@
+.content__container {
+  position: absolute;
+  width: 810px;
+  height: 430px;
+  border: 1px solid red;
+  z-index: 2;
+  top: 347px;
+  left: 509px;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__container {
+    width: 600px;
+    height: 400px;
+    top: 420px;
+    left: 342px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__container {
+    width: 460px;
+    height: 300px;
+    top: 284px;
+    left: 278px;
+  }
+}
