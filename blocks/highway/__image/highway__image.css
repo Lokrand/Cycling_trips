@@ -39,6 +39,7 @@
 
 @media screen and (max-width: 499px) {
   .highway__image {
-
+    width: 284px;
+    height: 175px;
   }
 }

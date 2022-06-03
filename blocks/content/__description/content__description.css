@@ -28,5 +28,6 @@
 
 @media screen and (max-width: 499px) {
   .content__description {
+    width: 284px;
   }
 }

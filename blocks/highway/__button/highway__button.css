@@ -19,3 +19,14 @@
   opacity: .75;
   cursor: pointer;
 }
+
+@media screen and (max-width: 499px) {
+  .highway__button {
+    margin-top: 7px;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    background-size: 7px 12px;
+    background-position: 8px 6px;
+  }
+}

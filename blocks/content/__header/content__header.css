@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 499px) {
   .content__header {
+    width: 284px;
     font: 700 32px/40px 'Inter',sans-serif;
-    margin-bottom: 40px;
   }
 }

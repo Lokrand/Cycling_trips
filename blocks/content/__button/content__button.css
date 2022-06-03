@@ -53,5 +53,10 @@
 
 @media screen and (max-width: 499px) {
   .content__button {
+    width: 284px;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 46px;
+    font: 600 13px/19px 'Inter',sans-serif;
   }
 }

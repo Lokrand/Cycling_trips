@@ -20,9 +20,10 @@
   }
 }
 
-
 @media screen and (max-width: 499px) {
   .highway__content {
-
+    width: 284px;
+    padding-right: 18px;
+    column-gap: 84px;
   }
 }

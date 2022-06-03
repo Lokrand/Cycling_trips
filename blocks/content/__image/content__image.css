@@ -27,5 +27,8 @@
 
 @media screen and (max-width: 499px) {
   .content__image {
+    width: 254px;
+    height: 348px;
+    margin-left: 30px;
   }
 }

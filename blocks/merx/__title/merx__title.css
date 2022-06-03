@@ -31,6 +31,8 @@
 
 @media screen and (max-width: 499px) {
   .merx__title {
-
+    width: 284px;
+    font: 600 23px/29px 'Inter', sans-serif;
+    margin-right: 0;
   }
 }

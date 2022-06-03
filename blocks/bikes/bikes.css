@@ -22,6 +22,6 @@
 
 @media screen and (max-width: 499px) {
   .bikes {
-
+    padding: 60px 18px 0 0;
   }
 }

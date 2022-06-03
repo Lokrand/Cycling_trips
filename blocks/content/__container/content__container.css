@@ -36,5 +36,8 @@
 
 @media screen and (max-width: 499px) {
   .content__container {
+    width: 284px;
+    height: 187px;
+    top: 297px;
   }
 }

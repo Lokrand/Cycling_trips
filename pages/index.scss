@@ -15,6 +15,7 @@
 @import '../blocks/content/__header/content__header';
 @import '../blocks/content/__text/content__text';
 @import '../blocks/content/__line/content__line';
+@import '../blocks/content/__line/_under-merx/content__line_under-merx.css';
 @import '../blocks/content/__image/content__image';
 @import '../blocks/content/__description/_workout/content__description_workout';
 @import '../blocks/content/__container/content__container.css';
@@ -157,12 +158,6 @@
   top: 3px;
 }
 
-.popup {
-  display: none;
-  position: relative;
-  height: 640px;
-  width: 320px;
-}
 
 .footer__theme_burger {
   bottom: 100px;
@@ -216,6 +211,12 @@
   }
 }
 
+@media screen and (max-width: 499px) {
+  .content__text_highway {
+    padding-right: 18px;
+  }
+}
+
 
 
 
@@ -265,4 +266,48 @@
   .content__text_workout {
     margin-bottom: 40px;
   }
+}
+
+.content__line_under-highway {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .content__line_under-highway {
+    display: block;
+    top: 540px;
+  }
+}
+
+.popup {
+  display: none;
+  height: 640px;
+  width: 320px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: var(--bg-color);
+  padding: 0;
+}
+
+.popup_open {
+  display: flex;
+}
+
+.popup__list {
+  list-style-type: none;
+  width: 210px;
+  margin: 144px 55px 0 15px;
+}
+
+.popup__item {
+  font: 500 18px/18px 'Inter', sans-serif;
+  margin-bottom: 32px;
+  text-align: center;
+  width: 210px;
+}
+
+.popup__item:last-child {
+  margin-bottom: 0;
 }

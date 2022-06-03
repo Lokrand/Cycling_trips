@@ -1,4 +1,5 @@
 .merx {
+  position: relative;
   display: flex;
   padding: 0 120px 60px 0;
   column-gap: 80px;
@@ -27,6 +28,6 @@
 
 @media screen and (max-width: 499px) {
   .merx {
-
+    margin-bottom: 40px;
   }
 }

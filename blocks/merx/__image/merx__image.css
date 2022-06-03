@@ -26,6 +26,8 @@
 
 @media screen and (max-width: 499px) {
   .merx__image {
-
+    width: 284px;
+    height: 204px;
+    margin-top: 40px;
   }
 }

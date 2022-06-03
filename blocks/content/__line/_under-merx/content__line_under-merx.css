@@ -1,0 +1,10 @@
+.content__line_under-merx {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .content__line_under-merx {
+    display: block;
+    top: 530px;
+  }
+}

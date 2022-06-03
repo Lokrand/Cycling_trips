@@ -24,3 +24,11 @@
     padding: 10px 20px;
   }
 }
+
+@media screen and (max-width: 499px) {
+  .content__sticky-container {
+    width: 234px;
+    height: 160px;
+    padding: 11px 27px;
+  }
+}
