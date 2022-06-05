@@ -194,3 +194,50 @@ const removeOldCards = () => {
 }
 // init first block
 renderBigBlock()
+
+
+// Popup
+
+const popupCross = document.querySelector('.popup__cross')
+const popup = document.querySelector('.popup')
+const burgerMenu = document.querySelector('.header__burger-menu')
+const popupLink = document.querySelectorAll('.popup__link')
+const popupThemeSwitch = document.querySelector('#popup-theme')
+burgerMenu.addEventListener('click', () => {
+  popupThemeSwitch.classList.add('footer__theme_popup')
+  popup.classList.add('popup_open')
+})
+popupCross.addEventListener('click', () => {
+  popup.classList.remove('popup_open')
+})
+popupLink.forEach((el) => {
+  el.addEventListener('click', () => {
+    popup.classList.remove('popup_open')
+  })
+})
+
+
+// bikes menu
+const bikesMenu = document.querySelector('.bikes-menu')
+const bikesMenuArrow = document.querySelector('.bikes-menu__arrow')
+const bikesMenuList = document.querySelector('.bikes-menu__list')
+bikesMenu.addEventListener('click', () => {
+  bikesMenuArrow.classList.toggle('bikes-menu__arrow_open')
+  bikesMenuList.classList.toggle('bikes-menu__list_open')
+})
+
+// footer email
+const footerSubmit = document.querySelector('.footer__submit')
+const footerEmailForm = document.querySelector('.footer__email')
+footerEmailForm.addEventListener('input', () => {
+  if (footerEmail.value !== '') {
+    footerSubmit.classList.add('footer__submit_visible')
+    footerSubmit.addEventListener('click', () => {
+      footerEmailForm.value = "Круто!"
+      footerSubmit.classList.remove('footer__submit_visible')
+    })
+  }
+})
+
+
+

@@ -1,0 +1,15 @@
+.footer__logo-mobile {
+  display: none;
+  position: absolute;
+  right: -2px;
+  bottom: -9px;
+  width: 38px;
+  height: 38px;
+}
+
+@media screen and (max-width: 499px) {
+  .footer__logo-mobile {
+    display: block;
+
+  }
+}

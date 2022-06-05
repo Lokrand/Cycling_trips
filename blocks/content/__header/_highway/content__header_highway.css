@@ -1,0 +1,18 @@
+.content__header_highway {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+@media screen and (max-width: 1023px) {
+  .content__header_highway {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content__header_highway {
+    grid-area: A;
+    width: 150px;
+    margin-bottom: 40px;
+  }
+}

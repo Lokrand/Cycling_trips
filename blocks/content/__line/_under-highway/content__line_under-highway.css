@@ -1,0 +1,10 @@
+.content__line_under-highway {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .content__line_under-highway {
+    display: block;
+    top: 540px;
+  }
+}

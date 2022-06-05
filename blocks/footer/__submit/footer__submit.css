@@ -1,0 +1,21 @@
+.footer__submit {
+  display: none;
+  position: relative;
+  top: 0;
+  right: 44px;
+  color: var(--header-text-color);
+  font: 500 13px/28px 'Inter', sans-serif;
+  transition: opacity .2s linear;
+}
+
+.footer__submit:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+@media screen and (max-width: 499px) {
+  .footer__submit {
+    top: -39px;
+    right: -248px;
+  }
+}

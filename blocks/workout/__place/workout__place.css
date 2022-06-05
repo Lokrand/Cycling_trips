@@ -2,9 +2,16 @@
   font: 600 18px/28px 'Inter', sans-serif;
   transition: opacity .2s linear;
   color: var(--header-text-color);
+  text-decoration: none;
 }
 
 .workout__place:hover {
   cursor: pointer;
   opacity: .65;
+}
+
+@media screen and (max-width: 499px) {
+  .workout__place {
+    font: 600 14px/20px 'Inter', sans-serif;
+  }
 }

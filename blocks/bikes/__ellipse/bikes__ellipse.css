@@ -1,0 +1,6 @@
+.bikes__ellipse {
+  width: 4px;
+  height: 4px;
+  background-color: #CACACA;
+  border-radius: 10px;
+}

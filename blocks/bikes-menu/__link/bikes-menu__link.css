@@ -1,0 +1,11 @@
+.bikes-menu__link {
+  font: 600 11px/14px 'Inter', sans-serif;
+  margin-bottom: 10px;
+  color: var(--header-text-color);
+  transition: opacity .2s linear;
+}
+
+.bikes-menu__link:hover {
+  cursor: pointer;
+  opacity: .7;
+}

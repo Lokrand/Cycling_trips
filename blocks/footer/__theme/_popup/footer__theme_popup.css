@@ -1,0 +1,7 @@
+@media screen and (max-width: 499px) {
+  .footer__theme_popup {
+    display: block;
+    top: 578px;
+    left: -172px;
+  }
+}

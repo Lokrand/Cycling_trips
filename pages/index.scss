@@ -1,12 +1,13 @@
 @import '../vendor/normalize';
 @import '../blocks/main/main';
 @import '../blocks/body/body';
-@import '../vendor/fonts/fonts.css';
+@import '../vendor/fonts/fonts';
 
 @import '../blocks/header/header';
 @import '../blocks/header/__item/header__item';
 @import '../blocks/header/__link/header__link';
 @import '../blocks/header/__menu/header__menu';
+@import '../blocks/header/__burger-menu/header__burger-menu';
 
 @import '../blocks/content/content';
 @import '../blocks/content/__bike-name/content__bike-name';
@@ -15,12 +16,20 @@
 @import '../blocks/content/__header/content__header';
 @import '../blocks/content/__text/content__text';
 @import '../blocks/content/__line/content__line';
-@import '../blocks/content/__line/_under-merx/content__line_under-merx.css';
 @import '../blocks/content/__image/content__image';
 @import '../blocks/content/__description/_workout/content__description_workout';
-@import '../blocks/content/__container/content__container.css';
-@import '../blocks/content/__bike-image/content__bike-image.css';
-@import '../blocks/content/__sticky-container/content__sticky-container.css';
+@import '../blocks/content/__container/content__container';
+@import '../blocks/content/__bike-image/content__bike-image';
+@import '../blocks/content/__sticky-container/content__sticky-container';
+@import '../blocks/content/__text/_workout/content__text_workout';
+@import '../blocks/content/__block/content__block';
+@import '../blocks/content/__text/_highway/content__text_highway';
+@import '../blocks/content/__line/_under-merx/content__line_under-merx';
+@import '../blocks/content/__line/_under-bikes/content__line_under-bikes';
+@import '../blocks/content/__line/_under-highway/content__line_under-highway';
+@import '../blocks/content/__header/_highway/content__header_highway';
+@import '../blocks/content/__header/_bikes/content__header_bikes';
+@import '../blocks/content/__header/_workout/content__header_workout';
 
 @import '../blocks/merx/merx';
 @import '../blocks/merx/__author/merx__author';
@@ -31,6 +40,7 @@
 
 @import '../blocks/highway/highway';
 @import '../blocks/highway/__button/highway__button';
+@import '../blocks/highway/__button/_night/highway__button_night';
 @import '../blocks/highway/__content/highway__content';
 @import '../blocks/highway/__gallery/highway__gallery';
 @import '../blocks/highway/__image/highway__image';
@@ -38,6 +48,7 @@
 
 @import '../blocks/bikes/bikes';
 @import '../blocks/bikes/__border/bikes__border';
+@import '../blocks/bikes/__border/_night/bikes__border_night';
 @import '../blocks/bikes/__header/bikes__header';
 @import '../blocks/bikes/__image/bikes__image';
 @import '../blocks/bikes/__link/bikes__link';
@@ -46,6 +57,9 @@
 @import '../blocks/bikes/__name/bikes__name';
 @import '../blocks/bikes/__type/bikes__type';
 @import '../blocks/bikes/__types/bikes__types';
+@import '../blocks/bikes/__ellipse/bikes__ellipse';
+@import '../blocks/bikes/__ellipse/_selected/bikes__ellipse_selected';
+@import '../blocks/bikes/__navigation/bikes__navigation';
 
 @import '../blocks/workout/workout';
 @import '../blocks/workout/__image/workout__image';
@@ -56,8 +70,33 @@
 @import '../blocks/footer/__club-name/footer__club-name';
 @import '../blocks/footer/__content/footer__content';
 @import '../blocks/footer/__email/footer__email';
+@import '../blocks/footer/__email/_night/footer__email_night';
 @import '../blocks/footer/__theme/footer__theme';
+@import '../blocks/footer/__theme/_night/footer__theme_night';
+@import '../blocks/footer/__theme/_burger/footer__theme_burger';
+@import '../blocks/footer/__theme/_popup/footer__theme_popup';
 @import '../blocks/footer/__title/footer__title';
+@import '../blocks/footer/__logo-mobile/footer__logo-mobile';
+@import '../blocks/footer/__submit/footer__submit';
+@import '../blocks/footer/__submit/_visible/footer__submit_visible';
+@import '../blocks/footer/__theme-switch/footer__theme-switch';
+@import '../blocks/footer/__theme-switch/_night/footer__theme-switch_night';
+
+@import '../blocks/bikes-menu/bikes-menu';
+@import '../blocks/bikes-menu/__arrow/bikes-menu__arrow';
+@import '../blocks/bikes-menu/__arrow/_open/bikes-menu__arrow_open';
+@import '../blocks/bikes-menu/__header/bikes-menu__header';
+@import '../blocks/bikes-menu/__link/bikes-menu__link';
+@import '../blocks/bikes-menu/__list/bikes-menu__list';
+@import '../blocks/bikes-menu/__list/_open/bikes-menu__list_open';
+@import '../blocks/bikes-menu/__title/bikes-menu__title';
+
+@import '../blocks/popup/popup';
+@import '../blocks/popup/__cross/popup__cross';
+@import '../blocks/popup/__item/popup__item';
+@import '../blocks/popup/__link/popup__link';
+@import '../blocks/popup/__list/popup__list';
+@import '../blocks/popup/_open/popup_open';
 
 :root {
   --bg-color: #f4f4f4;
@@ -81,233 +120,4 @@
   --content-border-line-color: #707070;
   --highway-button-bg-color: #434343;
   --footer-theme-bg-color: #545454;
-}
-
-.bikes__border_night {
-  box-shadow: none;
-}
-
-.highway__button_night {
-  background-image: url('../images/highway-navigation-night.svg');
-}
-
-.footer__theme-switch_nigth::after {
-  background: url('../images/night-dark.svg');
-}
-
-.footer__theme_night::before {
-  background: url('../images/day-dark.svg');
-}
-
-.footer__email_night::placeholder {
-  opacity: .5;
-}
-
-// .content {
-//   &__sticky-container {
-//   }
-// }
-
-.footer__logo-mobile {
-  display: none;
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  width: 38px;
-  height: 38px;
-}
-
-@media screen and (max-width: 499px) {
-  .footer__logo-mobile {
-    display: block;
-  }
-}
-
-.header__burger-menu {
-  display: none;
-}
-
-@media screen and (max-width: 499px) {
-  .header__burger-menu {
-    display: block;
-    position: relative;
-    width: 22px;
-    height: 22px;
-    top: 25px;
-    left: 280px;
-  }
-}
-
-.header__burger-menu span, .header__burger-menu::after, .header__burger-menu::before{
-  height: 3px;
-  width: 100%;
-  position: absolute;
-  background: #151515;
-  margin: 0 auto;
-}
-.header__burger-menu span{
-  top: 19px;
-}
-.header__burger-menu::after, .header__burger-menu::before{
-  content: '';
-}
-.header__burger-menu::after{
-  bottom: 8px;
-}
-.header__burger-menu::before{
-  top: 3px;
-}
-
-
-.footer__theme_burger {
-  bottom: 100px;
-  left: 100px;
-}
-
-.content__block {
-  display: flex;
-  column-gap: 250px;
-}
-
-.content__header_highway {
-  margin-top: 0;
-  margin-bottom: 44px;
-}
-
-@media screen and (max-width: 1023px) {
-  .content__header_highway {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .content__header_highway {
-    grid-area: A;
-    width: 150px;
-    margin-bottom: 40px;
-  }
-}
-
-
-.content__text_highway {
-  margin-bottom: 83px;
-}
-
-@media screen and (max-width: 1439px) {
-  .content__text_highway {
-    margin-bottom: 51px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .content__text_highway {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .content__text_highway {
-    grid-area: D;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  .content__text_highway {
-    padding-right: 18px;
-  }
-}
-
-
-
-
-
-.content__header_bikes {
-  margin-top: 0;
-}
-
-.content__header_workout {
-  margin-top: 3px;
-  margin-bottom: 41px;
-  grid-area: A;
-}
-
-@media screen and (max-width: 1023px) {
-  .content__header_workout {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .content__header_workout {
-    margin-bottom: 40px;
-  }
-}
-
-
-.content__text_workout {
-  height: fit-content;
-  margin-bottom: 179px;
-  grid-area: C;
-}
-
-@media screen and (max-width: 1439px) {
-  .content__text_workout {
-    margin-bottom: 103px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .content__text_workout {
-    margin-bottom: 68px;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .content__text_workout {
-    margin-bottom: 40px;
-  }
-}
-
-.content__line_under-highway {
-  display: none;
-}
-
-@media screen and (max-width: 499px) {
-  .content__line_under-highway {
-    display: block;
-    top: 540px;
-  }
-}
-
-.popup {
-  display: none;
-  height: 640px;
-  width: 320px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background-color: var(--bg-color);
-  padding: 0;
-}
-
-.popup_open {
-  display: flex;
-}
-
-.popup__list {
-  list-style-type: none;
-  width: 210px;
-  margin: 144px 55px 0 15px;
-}
-
-.popup__item {
-  font: 500 18px/18px 'Inter', sans-serif;
-  margin-bottom: 32px;
-  text-align: center;
-  width: 210px;
-}
-
-.popup__item:last-child {
-  margin-bottom: 0;
 }

@@ -4,14 +4,21 @@
   border: 1px solid rgba(199, 199, 199, 0.5);
   border-radius: 4px;
   outline: none;
+  color: var(--header-text-color);
   background-color: var(--footer-bg-color);
+  cursor: pointer;
+  padding-left: 20px;
 }
 
 .footer__email::placeholder {
-  padding: 11px 270px 11px 20px;
+  padding: 11px 270px 11px 0;
   font: 500 13px/28px 'Inter', sans-serif;
   color: var(--header-text-color);
   opacity: 0.7;
+}
+
+.footer__email:hover::placeholder {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1439px) {
@@ -34,7 +41,8 @@
 
 @media screen and (max-width: 499px) {
   .footer__email {
-    width: 284px;
+    width: 262px;
+    padding: 0 0 0 20px;
   }
 }
 

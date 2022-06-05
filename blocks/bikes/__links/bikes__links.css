@@ -12,6 +12,6 @@
 
 @media screen and (max-width: 499px) {
   .bikes__links {
-
+    display: none;
   }
 }

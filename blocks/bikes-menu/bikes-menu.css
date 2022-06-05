@@ -1,0 +1,18 @@
+.bikes-menu {
+  display: none;
+  position: relative;
+  height: 32px;
+  width: 114px;
+  z-index: 2;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 499px) {
+  .bikes-menu {
+    display: block;
+  }
+}
+
+.bikes-menu:hover {
+  cursor: pointer;
+}

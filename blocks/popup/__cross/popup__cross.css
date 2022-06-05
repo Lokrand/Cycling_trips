@@ -1,0 +1,12 @@
+.popup__cross {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  transition: opacity .2s linear;
+}
+
+.popup__cross:hover {
+  opacity: .6;
+}

@@ -1,0 +1,17 @@
+.popup__item {
+  font: 500 18px/18px 'Inter', sans-serif;
+  margin-bottom: 32px;
+  text-align: center;
+  width: 210px;
+  text-decoration: none;
+  transition: opacity .2s linear;
+}
+
+.popup__item:last-child {
+  margin-bottom: 0;
+}
+
+.popup__item:hover {
+  cursor: pointer;
+  opacity: .75;
+}

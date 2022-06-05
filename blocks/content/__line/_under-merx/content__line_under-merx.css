@@ -1,10 +1,15 @@
-.content__line_under-merx {
+.merx__line {
   display: none;
+
 }
 
 @media screen and (max-width: 499px) {
-  .content__line_under-merx {
+  .merx__line {
+    position: absolute;
     display: block;
+    border: 1px solid var(--content-border-line-color);
     top: 530px;
+    width: 282px;
+    left: 0;
   }
 }

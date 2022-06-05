@@ -1,0 +1,28 @@
+.content__text_highway {
+  margin-bottom: 83px;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__text_highway {
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content__text_highway {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content__text_highway {
+    grid-area: D;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .content__text_highway {
+    padding-right: 18px;
+    width: 284px;
+  }
+}

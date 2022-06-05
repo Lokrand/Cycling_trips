@@ -43,7 +43,7 @@
         <p class="merx__author">Эдди Меркс</p>
         <p class="merx__hobbies">Велогонщик</p>
       </div>
-      <hr class="content__line content__line_under-merx">
+      <hr class="merx__line">
     </section>
     <section class="highway" id="highway">
       <template id="highway-template">
@@ -62,9 +62,24 @@
       </template>
       <hr class="content__line content__line_under-highway">
     </section>
+
+
+
+
     <section class="bikes" id="bikes">
       <div class="bikes__header">
         <h2 class="content__header content__header_bikes">Велосипеды</h2>
+        <nav class="bikes-menu">
+          <div class="bikes-menu__header">
+            <p class="bikes-menu__title">Шоссе</p>
+            <img src="./images/bikes-menu-arrow.svg" alt="Стрелка" class="bikes-menu__arrow">   <!-- bikes-menu__arrow_open -->
+          </div>
+          <ul class="bikes-menu__list">
+            <li class="bikes-menu__link">Шоссе</li>
+            <li class="bikes-menu__link">Грэвел</li>
+            <li class="bikes-menu__link">ТТ</li>
+          </ul>
+        </nav>
         <ul class="bikes__links">
           <li class="bikes__link bikes__link_bold">Шоссе</li>
           <li class="bikes__link">Грэвел</li>
@@ -81,6 +96,16 @@
           </div>
         </template>
       </div>
+      <ul class="bikes__navigation">
+        <li class="bikes__ellipse bikes__ellipse_selected"></li>
+        <li class="bikes__ellipse"></li>
+        <li class="bikes__ellipse"></li>
+      </ul>
+
+      <hr class="content__line content__line_under-bikes">
+
+
+
     </section>
     <section class="workout" id="workout">
       <div class="content__description content__description_workout">
@@ -89,8 +114,8 @@
         <p class="content__text content__text_workout">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
           а записать эти тренировки поможет приложение Strava, а также это&nbsp;приложение позволит построить тренировочный&nbsp;план.</p>
         <div class="workout__places">
-          <p class="workout__place">Strava</p>
-          <p class="workout__place">Komoot</p>
+          <a class="workout__place" href="https://www.komoot.com" target="_blank">Strava</a>
+          <a class="workout__place" href="https://www.strava.com" target="_blank">Komoot</a>
         </div>
       </div>
     </section>
@@ -99,6 +124,7 @@
       <div class="footer__content">
         <h3 class="footer__title">Подпишитесь на рассылку —</h3>
         <input type="text" placeholder="Ваш e-mail" class="footer__email">
+        <span class="footer__submit">ok</span>
         <p class="footer__club-name">&copy; Road Club 2021</p>
         <img src="./images/footer-logo-mobile.svg" alt="Логотип" class="footer__logo-mobile">
       </div>
@@ -107,21 +133,21 @@
         <span class="footer__theme-switch"></span>
       </label>
     </footer>
-    <div class="popup popup_open">
-      <img src="" alt="">
+    <div class="popup">
+      <img src="./images/popup-cross.svg" alt="Крестик" class="popup__cross">
         <ul class="popup__list">
-          <li class="popup__item">Покрытия и градиенты</li>
-          <li class="popup__item">Велосипеды</li>
-          <li class="popup__item">Тренировки</li>
+          <li class="popup__item"><a href="#highway" class="popup__link">Покрытия и градиенты</a></li>
+          <li class="popup__item"><a href="#bikes" class="popup__link">Велосипеды</a></li>
+          <li class="popup__item"><a href="#workout" class="popup__link">Тренировки</a></li>
         </ul>
-        <label class="footer__theme">
+        <label class="footer__theme" id="popup-theme">
           <input type="checkbox" id="popup-theme-switch">
           <span class="footer__theme-switch"></span>
         </label>
-      <label class="footer__theme footer__theme_burger">
+      <!-- <label class="footer__theme footer__theme_burger">
         <input type="checkbox" id="theme-switch">
         <span class="footer__theme-switch"></span>
-      </label>
+      </label> -->
     </div>
   </div>
   <script src="./script/bikes.js"></script>

@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 499px) {
   .workout__image {
-
+    width: 284px;
+    height: 225px;
   }
 }

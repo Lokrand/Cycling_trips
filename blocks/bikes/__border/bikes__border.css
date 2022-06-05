@@ -29,6 +29,7 @@
 
 @media screen and (max-width: 499px) {
   .bikes__border {
-
+    width: 284px;
+    height: 306px;
   }
 }

@@ -20,6 +20,10 @@
 
 @media screen and (max-width: 499px) {
   .bikes__name {
-
+    font: 600 14px/18px 'Inter', sans-serif;
+    margin: 0;
+    position: absolute;
+    bottom: 36px;
+    left: 72px;
   }
 }
