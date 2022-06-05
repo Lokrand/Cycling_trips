@@ -73,6 +73,11 @@ const bikeTypes = [
     }
   ],
 ]
+const greenIconsHighway = [
+  {link: "./images/highway.svg"},
+  {link: "./images/Grevel.svg"},
+  {link: "./images/TT.svg"}
+]
 
 const highwayImages = [
   {
@@ -135,6 +140,7 @@ bl = new BlockManager(
     arrCss,
     highwayImages,
     bikeTypes,
+    greenIconsHighway,
   ]
 )
 
@@ -173,6 +179,10 @@ const highlightSelection = (arr) => {
   })
 }
 
+const createGreenIcon = (x) => {
+  let icons = document.querySelector('.highway__vector')
+  icons.src = greenIconsHighway[x].link;
+}
 const renderBigBlock = (direction) => {
   let blData
   if (direction) {
@@ -182,6 +192,7 @@ const renderBigBlock = (direction) => {
   }
   highlightSelection(blData[0])
   createHighway(bl.cursor)
+  createGreenIcon(bl.cursor)
   blData[2].forEach(element => {
     renderCard(element.name, element.type)
   });

@@ -1289,6 +1289,43 @@ template {
     margin: 0;
   }
 }
+.highway__trapezoid {
+  width: 98px;
+  height: 40px;
+  position: absolute;
+  bottom: 116px;
+  left: 0px;
+  z-index: 2;
+  margin: 0;
+  background: url("../images/green-trapezoid.svg");
+}
+
+@media screen and (max-width: 1439px) {
+  .highway__trapezoid {
+    bottom: 96px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .highway__trapezoid {
+    bottom: 86px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .highway__trapezoid {
+    bottom: 208px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .highway__trapezoid {
+    bottom: 184px;
+  }
+}
+.highway__vector {
+  position: relative;
+  top: 12px;
+  left: 16px;
+}
+
 .bikes {
   padding: 43px 120px 90px 0;
 }
@@ -1621,8 +1658,8 @@ template {
 }
 
 .footer__email {
-  width: 358px;
-  height: 48px;
+  width: 336px;
+  height: 46px;
   border: 1px solid rgba(199, 199, 199, 0.5);
   border-radius: 4px;
   outline: none;

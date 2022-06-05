@@ -1,0 +1,34 @@
+.highway__trapezoid {
+  width: 98px;
+  height: 40px;
+  position: absolute;
+  bottom: 116px;
+  left: 0px;
+  z-index: 2;
+  margin: 0;
+  background: url('../images/green-trapezoid.svg');
+}
+
+@media screen and (max-width: 1439px) {
+  .highway__trapezoid {
+    bottom: 96px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .highway__trapezoid {
+    bottom: 86px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .highway__trapezoid {
+    bottom: 208px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .highway__trapezoid {
+    bottom: 184px;
+  }
+}
