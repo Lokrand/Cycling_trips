@@ -476,7 +476,7 @@ template {
   height: 3px;
   width: 100%;
   position: absolute;
-  background: #151515;
+  background: var(--header-text-color);
   margin: 0 auto;
 }
 
@@ -938,10 +938,16 @@ template {
   }
 }
 .content__line_under-bikes {
-  top: 594px;
-  left: 0px;
+  display: none;
 }
 
+@media screen and (max-width: 499px) {
+  .content__line_under-bikes {
+    display: block;
+    top: 594px;
+    left: 0px;
+  }
+}
 .content__line_under-highway {
   display: none;
 }
@@ -1887,6 +1893,7 @@ template {
   top: -10px;
   z-index: 1;
   border-top: none;
+  background-color: var(--bg-color);
 }
 
 .bikes-menu__list_open {

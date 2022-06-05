@@ -10,4 +10,5 @@
   top: -10px;
   z-index: 1;
   border-top: none;
+  background-color: var(--bg-color);
 }
