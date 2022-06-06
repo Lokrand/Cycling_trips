@@ -1756,20 +1756,6 @@ template {
   cursor: pointer;
 }
 
-.footer__theme-switch::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url("../../../images/nigth.svg");
-  background-size: 20px 20px;
-  position: absolute;
-  top: 2px;
-  left: 66px;
-  z-index: 1;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 1439px) {
   .footer__theme {
     left: 778px;
@@ -1859,6 +1845,20 @@ template {
 }
 .footer__submit_visible {
   display: inline;
+}
+
+.footer__theme-switch::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../../images/nigth.svg");
+  background-size: 20px 20px;
+  position: absolute;
+  top: 2px;
+  left: 66px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .footer__theme-switch_nigth::after {
