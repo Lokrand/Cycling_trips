@@ -65,22 +65,18 @@
       </template>
       <hr class="content__line content__line_under-highway">
     </section>
-
-
-
-
     <section class="bikes" id="bikes">
       <div class="bikes__header">
         <h2 class="content__header content__header_bikes">Велосипеды</h2>
         <nav class="bikes-menu">
           <div class="bikes-menu__header">
-            <p class="bikes-menu__title">Шоссе</p>
-            <img src="./images/bikes-menu-arrow.svg" alt="Стрелка" class="bikes-menu__arrow">   <!-- bikes-menu__arrow_open -->
+            <p class="bikes-menu__title"></p>
+            <img src="./images/bikes-menu-arrow.svg" alt="Стрелка" class="bikes-menu__arrow">
           </div>
           <ul class="bikes-menu__list">
-            <li class="bikes-menu__link">Шоссе</li>
-            <li class="bikes-menu__link">Грэвел</li>
-            <li class="bikes-menu__link">ТТ</li>
+            <li class="bikes-menu__link" id="link-highway">Шоссе</li>
+            <li class="bikes-menu__link" id="link-grevel">Грэвел</li>
+            <li class="bikes-menu__link" id="link-TT">ТТ</li>
           </ul>
         </nav>
         <ul class="bikes__links">
@@ -100,15 +96,11 @@
         </template>
       </div>
       <ul class="bikes__navigation">
-        <li class="bikes__ellipse bikes__ellipse_selected"></li>
-        <li class="bikes__ellipse"></li>
-        <li class="bikes__ellipse"></li>
+        <li class="bikes__ellipse bikes__ellipse_selected" id="ellipse-first"></li>
+        <li class="bikes__ellipse" id="ellipse-second"></li>
+        <li class="bikes__ellipse" id="ellipse-third"></li>
       </ul>
-
       <hr class="content__line content__line_under-bikes">
-
-
-
     </section>
     <section class="workout" id="workout">
       <div class="content__description content__description_workout">
@@ -147,10 +139,6 @@
           <input type="checkbox" id="popup-theme-switch">
           <span class="footer__theme-switch"></span>
         </label>
-      <!-- <label class="footer__theme footer__theme_burger">
-        <input type="checkbox" id="theme-switch">
-        <span class="footer__theme-switch"></span>
-      </label> -->
     </div>
   </div>
   <script src="./script/bikes.js"></script>

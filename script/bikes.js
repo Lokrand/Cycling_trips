@@ -183,6 +183,11 @@ const createGreenIcon = (x) => {
   let icons = document.querySelector('.highway__vector')
   icons.src = greenIconsHighway[x].link;
 }
+const bikesMenuChangeTitle = (x) => {
+  const bikesMenuTitle = document.querySelector('.bikes-menu__title')
+  bikesMenuTitle.textContent = highwayTitles[x];
+}
+
 const renderBigBlock = (direction) => {
   let blData
   if (direction) {
@@ -193,6 +198,7 @@ const renderBigBlock = (direction) => {
   highlightSelection(blData[0])
   createHighway(bl.cursor)
   createGreenIcon(bl.cursor)
+  bikesMenuChangeTitle(bl.cursor)
   blData[2].forEach(element => {
     renderCard(element.name, element.type)
   });
@@ -205,7 +211,6 @@ const removeOldCards = () => {
 }
 // init first block
 renderBigBlock()
-
 
 // Popup
 
@@ -227,17 +232,65 @@ popupLink.forEach((el) => {
   })
 })
 
-
 // bikes menu
+
 const bikesMenu = document.querySelector('.bikes-menu')
 const bikesMenuArrow = document.querySelector('.bikes-menu__arrow')
 const bikesMenuList = document.querySelector('.bikes-menu__list')
+
 bikesMenu.addEventListener('click', () => {
   bikesMenuArrow.classList.toggle('bikes-menu__arrow_open')
   bikesMenuList.classList.toggle('bikes-menu__list_open')
 })
 
+const linkHighway = document.querySelector('#link-highway')
+const linkGrevel = document.querySelector('#link-grevel')
+const linkTT = document.querySelector('#link-TT')
+
+linkHighway.addEventListener('click', () => {
+  removeOldCards()
+  renderBigBlock(0)
+})
+linkGrevel.addEventListener('click', () => {
+  removeOldCards()
+  renderBigBlock(1)
+})
+linkTT.addEventListener('click', () => {
+  removeOldCards()
+  renderBigBlock(2)
+})
+const ellipseFirst = document.querySelector('#ellipse-first')
+const ellipseSecond = document.querySelector('#ellipse-second')
+const ellipseThird = document.querySelector('#ellipse-third')
+if (document.documentElement.clientWidth < 500) {
+  ellipseFirst.addEventListener('click', () => {
+    ellipseThird.classList.remove('bikes__ellipse_selected')
+    ellipseSecond.classList.remove('bikes__ellipse_selected')
+    ellipseFirst.classList.add('bikes__ellipse_selected')
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(4)").style.display = 'none'
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(3)").style.display = 'none'
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(2)").style.display = 'block'
+  })
+  ellipseSecond.addEventListener('click', () => {
+    ellipseFirst.classList.remove('bikes__ellipse_selected')
+    ellipseThird.classList.remove('bikes__ellipse_selected')
+    ellipseSecond.classList.add('bikes__ellipse_selected')
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(4)").style.display = 'none'
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(2)").style.display = 'none'
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(3)").style.display = 'block'
+  })
+  ellipseThird.addEventListener('click', () => {
+    ellipseSecond.classList.remove('bikes__ellipse_selected')
+    ellipseFirst.classList.remove('bikes__ellipse_selected')
+    ellipseThird.classList.add('bikes__ellipse_selected')
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(2)").style.display = 'none'
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(3)").style.display = 'none'
+    document.querySelector("#bikes > div.bikes__types > div:nth-child(4)").style.display = 'block'
+  })
+}
+
 // footer email
+
 const footerSubmit = document.querySelector('.footer__submit')
 const footerEmailForm = document.querySelector('.footer__email')
 footerEmailForm.addEventListener('input', () => {
@@ -249,6 +302,3 @@ footerEmailForm.addEventListener('input', () => {
     })
   }
 })
-
-
-
