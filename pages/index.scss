@@ -99,6 +99,8 @@
 @import '../blocks/popup/__link/popup__link';
 @import '../blocks/popup/__list/popup__list';
 @import '../blocks/popup/_open/popup_open';
+@import '../blocks/popup/__theme/popup__theme.css';
+@import '../blocks/popup/__theme-switch/popup__theme-switch.css';
 
 :root {
   --bg-color: #f4f4f4;

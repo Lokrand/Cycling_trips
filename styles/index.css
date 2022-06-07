@@ -1,5 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 @import '../vendor/fonts/fonts.css';
+@import '../blocks/popup/__theme/popup__theme.css';
+@import '../blocks/popup/__theme-switch/popup__theme-switch.css';
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0;
 }
@@ -846,27 +848,6 @@ template {
     padding: 11px 27px;
   }
 }
-.content__text_workout {
-  height: fit-content;
-  margin-bottom: 179px;
-  grid-area: C;
-}
-
-@media screen and (max-width: 1439px) {
-  .content__text_workout {
-    margin-bottom: 103px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .content__text_workout {
-    margin-bottom: 68px;
-  }
-}
-@media screen and (max-width: 799px) {
-  .content__text_workout {
-    margin-bottom: 40px;
-  }
-}
 .content__block {
   display: flex;
   column-gap: 250px;
@@ -1693,6 +1674,36 @@ template {
     width: 284px;
   }
 }
+.workout__text {
+  height: fit-content;
+  margin-bottom: 179px;
+  grid-area: C;
+  font: 400 18px/28px "Inter", sans-serif;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1439px) {
+  .workout__text {
+    margin-bottom: 103px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .workout__text {
+    margin-bottom: 68px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .workout__text {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .workout__text {
+    margin-bottom: 40px;
+    font: 400 12px/18px "Inter", sans-serif;
+  }
+}
 .footer {
   padding: 80px 120px 60px 120px;
   position: relative;
@@ -1839,20 +1850,6 @@ template {
   cursor: pointer;
 }
 
-.footer__theme-switch::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url("../images/nigth.svg");
-  background-size: 20px 20px;
-  position: absolute;
-  top: 2px;
-  left: 66px;
-  z-index: 1;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 1439px) {
   .footer__theme {
     left: 778px;
@@ -1942,6 +1939,20 @@ template {
 }
 .footer__submit_visible {
   display: inline;
+}
+
+.footer__theme-switch::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/nigth.svg");
+  background-size: 20px 20px;
+  position: absolute;
+  top: 2px;
+  left: 66px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .footer__theme-switch_nigth::after {
