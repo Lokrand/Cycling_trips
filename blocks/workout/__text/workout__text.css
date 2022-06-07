@@ -1,0 +1,32 @@
+.workout__text {
+  height: fit-content;
+  margin-bottom: 179px;
+  grid-area: C;
+  font: 400 18px/28px 'Inter',sans-serif;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+@media screen and (max-width: 1439px) {
+  .workout__text {
+    margin-bottom: 103px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .workout__text {
+    margin-bottom: 68px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .workout__text {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .workout__text {
+    margin-bottom: 40px;
+    font: 400 12px/18px 'Inter',sans-serif;
+  }
+}

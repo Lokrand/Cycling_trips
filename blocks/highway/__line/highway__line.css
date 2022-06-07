@@ -1,0 +1,14 @@
+.highway__line {
+  display: none;
+  position: absolute;
+  border: 1px solid var(--content-border-line-color);
+}
+
+@media screen and (max-width: 499px) {
+  .highway__line {
+    display: block;
+    width: 282px;
+    top: 540px;
+    left: 0px;
+  }
+}

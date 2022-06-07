@@ -1,0 +1,14 @@
+.bikes__line {
+  display: none;
+  position: absolute;
+  border: 1px solid var(--content-border-line-color);
+}
+
+@media screen and (max-width: 499px) {
+  .bikes__line {
+    display: block;
+    width: 282px;
+    top: 594px;
+    left: 0px;
+  }
+}

@@ -19,9 +19,9 @@
         <span></span>
       </div>
     </header>
-  <div class="main">
+  <main class="main">
     <section class="content">
-      <h2 class="content__header">Шоссе, ТТ и&nbsp;Грэвел</h2>
+      <h1 class="content__header">Шоссе, ТТ и&nbsp;Грэвел</h1>
       <img src="./images/Placeholder.png" alt="Природа лесных гор" class="content__image">
       <div class="content__description">
         <p class="content__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам –
@@ -48,7 +48,7 @@
     <section class="highway" id="highway">
       <template id="highway-template">
         <div class="highway__content">
-          <h2 class="content__header content__header_highway" id="highway-title"></h2>
+          <h2 class="highway__title" id="highway-title"></h2>
           <p class="content__text content__text_highway"></p>
           <div class="highway__gallery">
             <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-1">
@@ -63,11 +63,11 @@
           </div>
         </div>
       </template>
-      <hr class="content__line content__line_under-highway">
+      <hr class="highway__line">
     </section>
     <section class="bikes" id="bikes">
       <div class="bikes__header">
-        <h2 class="content__header content__header_bikes">Велосипеды</h2>
+        <h2 class="bikes__title">Велосипеды</h2>
         <nav class="bikes-menu">
           <div class="bikes-menu__header">
             <p class="bikes-menu__title"></p>
@@ -100,13 +100,13 @@
         <li class="bikes__ellipse" id="ellipse-second"></li>
         <li class="bikes__ellipse" id="ellipse-third"></li>
       </ul>
-      <hr class="content__line content__line_under-bikes">
+      <hr class="bikes__line">
     </section>
     <section class="workout" id="workout">
-      <div class="content__description content__description_workout">
-        <h2 class="content__header content__header_workout">Тренировки</h2>
+      <div class="workout__description">
+        <h2 class="workout__title">Тренировки</h2>
         <img src="./images/workout-road.png" alt="Холмистая дорога" class="workout__image">
-        <p class="content__text content__text_workout">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+        <p class="workout__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
           а записать эти тренировки поможет приложение Strava, а также это&nbsp;приложение позволит построить тренировочный&nbsp;план.</p>
         <div class="workout__places">
           <a class="workout__place" href="https://www.komoot.com" target="_blank">Strava</a>
@@ -114,7 +114,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
     <footer class="footer">
       <div class="footer__content">
         <h3 class="footer__title">Подпишитесь на рассылку —</h3>

@@ -17,19 +17,11 @@
 @import '../blocks/content/__text/content__text';
 @import '../blocks/content/__line/content__line';
 @import '../blocks/content/__image/content__image';
-@import '../blocks/content/__description/_workout/content__description_workout';
 @import '../blocks/content/__container/content__container';
 @import '../blocks/content/__bike-image/content__bike-image';
 @import '../blocks/content/__sticky-container/content__sticky-container';
-@import '../blocks/content/__text/_workout/content__text_workout';
 @import '../blocks/content/__block/content__block';
 @import '../blocks/content/__text/_highway/content__text_highway';
-@import '../blocks/content/__line/_under-merx/content__line_under-merx';
-@import '../blocks/content/__line/_under-bikes/content__line_under-bikes';
-@import '../blocks/content/__line/_under-highway/content__line_under-highway';
-@import '../blocks/content/__header/_highway/content__header_highway';
-@import '../blocks/content/__header/_bikes/content__header_bikes';
-@import '../blocks/content/__header/_workout/content__header_workout';
 
 @import '../blocks/merx/merx';
 @import '../blocks/merx/__author/merx__author';
@@ -37,6 +29,7 @@
 @import '../blocks/merx/__hobbies/merx__hobbies';
 @import '../blocks/merx/__image/merx__image';
 @import '../blocks/merx/__title/merx__title';
+@import '../blocks/merx/__line/merx__line';
 
 @import '../blocks/highway/highway';
 @import '../blocks/highway/__button/highway__button';
@@ -47,6 +40,8 @@
 @import '../blocks/highway/__navigation/highway__navigation';
 @import '../blocks/highway/__trapezoid/highway__trapezoid';
 @import '../blocks/highway/__vector/highway__vector';
+@import '../blocks/highway/__line/highway__line';
+@import '../blocks/highway/__title/highway__title';
 
 @import '../blocks/bikes/bikes';
 @import '../blocks/bikes/__border/bikes__border';
@@ -62,11 +57,16 @@
 @import '../blocks/bikes/__ellipse/bikes__ellipse';
 @import '../blocks/bikes/__ellipse/_selected/bikes__ellipse_selected';
 @import '../blocks/bikes/__navigation/bikes__navigation';
+@import '../blocks/bikes/__line/bikes__line';
+@import '../blocks/bikes/__title/bikes__title';
 
 @import '../blocks/workout/workout';
 @import '../blocks/workout/__image/workout__image';
 @import '../blocks/workout/__place/workout__place';
 @import '../blocks/workout/__places/workout__places';
+@import '../blocks/workout/__title/workout__title';
+@import '../blocks/workout/__description/workout__description';
+@import '../blocks/workout/__text/workout__text';
 
 @import '../blocks/footer/footer';
 @import '../blocks/footer/__club-name/footer__club-name';

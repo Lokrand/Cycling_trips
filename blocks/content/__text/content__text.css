@@ -5,16 +5,9 @@
   opacity: 0.7;
 }
 
-
 @media screen and (max-width: 1023px) {
   .content__text {
     margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .content__text {
-
   }
 }
 

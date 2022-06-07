@@ -751,31 +751,6 @@ template {
     margin-left: 30px;
   }
 }
-.content__description_workout {
-  display: grid;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  grid-template-areas: "A B" "C B" "D B";
-  column-gap: 160px;
-  /* row-gap: 50px; */
-}
-
-@media screen and (max-width: 1439px) {
-  .content__description_workout {
-    column-gap: 64px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .content__description_workout {
-    column-gap: 30px;
-  }
-}
-@media screen and (max-width: 799px) {
-  .content__description_workout {
-    grid-template-areas: "A" "B" "C" "D";
-  }
-}
 .content__container {
   position: absolute;
   width: 810px;
@@ -922,78 +897,6 @@ template {
     width: 284px;
   }
 }
-.merx__line {
-  display: none;
-}
-
-@media screen and (max-width: 499px) {
-  .merx__line {
-    position: absolute;
-    display: block;
-    border: 1px solid var(--content-border-line-color);
-    top: 530px;
-    width: 282px;
-    left: 0;
-  }
-}
-.content__line_under-bikes {
-  display: none;
-}
-
-@media screen and (max-width: 499px) {
-  .content__line_under-bikes {
-    display: block;
-    top: 594px;
-    left: 0px;
-  }
-}
-.content__line_under-highway {
-  display: none;
-}
-
-@media screen and (max-width: 499px) {
-  .content__line_under-highway {
-    display: block;
-    top: 540px;
-  }
-}
-.content__header_highway {
-  margin-top: 0;
-  margin-bottom: 44px;
-}
-
-@media screen and (max-width: 1023px) {
-  .content__header_highway {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 799px) {
-  .content__header_highway {
-    grid-area: A;
-    width: 150px;
-    margin-bottom: 40px;
-  }
-}
-.content__header_bikes {
-  margin-top: 0;
-}
-
-.content__header_workout {
-  margin-top: 3px;
-  margin-bottom: 41px;
-  grid-area: A;
-}
-
-@media screen and (max-width: 1023px) {
-  .content__header_workout {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 799px) {
-  .content__header_workout {
-    margin-bottom: 40px;
-  }
-}
 .merx {
   position: relative;
   display: flex;
@@ -1131,6 +1034,20 @@ template {
     width: 284px;
     font: 600 23px/29px "Inter", sans-serif;
     margin-right: 0;
+  }
+}
+.merx__line {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .merx__line {
+    position: absolute;
+    display: block;
+    border: 1px solid var(--content-border-line-color);
+    top: 530px;
+    width: 282px;
+    left: 0;
   }
 }
 .highway {
@@ -1325,6 +1242,55 @@ template {
   left: 16px;
 }
 
+.highway__line {
+  display: none;
+  position: absolute;
+  border: 1px solid var(--content-border-line-color);
+}
+
+@media screen and (max-width: 499px) {
+  .highway__line {
+    display: block;
+    width: 282px;
+    top: 540px;
+    left: 0px;
+  }
+}
+.highway__title {
+  width: 460px;
+  height: fit-content;
+  margin: 0 0 44px 0;
+  font: 700 55px/60px "Inter", sans-serif;
+  color: var(--header-text-color);
+  letter-spacing: -0.5px;
+  grid-area: A;
+}
+
+@media screen and (max-width: 1439px) {
+  .highway__title {
+    width: 300px;
+    margin: 40px 0 0 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .highway__title {
+    width: 280px;
+    margin: 40px 0 30px 0;
+    font: 700 50px/55px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 799px) {
+  .highway__title {
+    width: 150px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .highway__title {
+    width: 284px;
+    font: 700 32px/40px "Inter", sans-serif;
+  }
+}
 .bikes {
   padding: 43px 120px 90px 0;
 }
@@ -1549,6 +1515,54 @@ template {
     display: flex;
   }
 }
+.bikes__line {
+  display: none;
+  position: absolute;
+  border: 1px solid var(--content-border-line-color);
+}
+
+@media screen and (max-width: 499px) {
+  .bikes__line {
+    display: block;
+    width: 282px;
+    top: 594px;
+    left: 0px;
+  }
+}
+.bikes__title {
+  width: 460px;
+  margin: 0;
+  height: fit-content;
+  font: 700 55px/60px "Inter", sans-serif;
+  color: var(--header-text-color);
+  letter-spacing: -0.5px;
+  grid-area: A;
+}
+
+@media screen and (max-width: 1439px) {
+  .bikes__title {
+    width: 300px;
+    margin: 40px 0 0 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bikes__title {
+    width: 280px;
+    margin: 40px 0 0 0;
+    font: 700 50px/55px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 799px) {
+  .bikes__title {
+    width: 460px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .bikes__title {
+    width: 284px;
+    font: 700 32px/40px "Inter", sans-serif;
+  }
+}
 .workout {
   display: flex;
   column-gap: 160px;
@@ -1610,6 +1624,75 @@ template {
   grid-area: D;
 }
 
+.workout__title {
+  width: 460px;
+  height: fit-content;
+  margin: 3px 0 41px 0;
+  font: 700 55px/60px "Inter", sans-serif;
+  color: var(--header-text-color);
+  letter-spacing: -0.5px;
+  grid-area: A;
+}
+
+@media screen and (max-width: 1439px) {
+  .workout__title {
+    width: 300px;
+    margin: 40px 0 0 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .workout__title {
+    width: 280px;
+    margin: 0;
+    font: 700 50px/55px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 799px) {
+  .workout__title {
+    width: 460px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .workout__title {
+    width: 284px;
+    font: 700 32px/40px "Inter", sans-serif;
+  }
+}
+.workout__description {
+  width: 460px;
+  display: grid;
+  flex-direction: column;
+  margin: 0;
+  grid-area: C;
+  grid-template-areas: "A B" "C B" "D B";
+  column-gap: 160px;
+}
+
+@media screen and (max-width: 1439px) {
+  .workout__description {
+    width: 300px;
+    column-gap: 64px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .workout__description {
+    width: 280px;
+    column-gap: 30px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .workout__description {
+    width: 460px;
+    margin: 0 0 60px 0;
+    grid-template-areas: "A" "B" "C" "D";
+  }
+}
+@media screen and (max-width: 499px) {
+  .workout__description {
+    width: 284px;
+  }
+}
 .footer {
   padding: 80px 120px 60px 120px;
   position: relative;
