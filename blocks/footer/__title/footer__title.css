@@ -6,28 +6,9 @@
   margin-top: 1px;
 }
 
-@media screen and (max-width: 1439px) {
-  .footer__title {
-
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .footer__title {
-
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .footer__title {
-
-  }
-}
-
 @media screen and (max-width: 499px) {
   .footer__title {
     width: 284px;
     margin-bottom: 40px;
   }
 }
-
