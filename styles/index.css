@@ -1416,6 +1416,10 @@ template {
   margin-top: 26px;
 }
 
+.bikes__link:hover {
+  cursor: pointer;
+}
+
 .bikes__link_bold {
   font: 600 18px/28px "Inter", sans-serif;
   color: var(--header-text-color);

@@ -161,11 +161,13 @@ let range = n => [...Array(n).keys()]
 highwayButtonRight.addEventListener("click", () => {
   removeOldCards()
   renderBigBlock(1)
+  renderNewBike()
 })
 
 highwayButtonLeft.addEventListener("click", () => {
   removeOldCards()
   renderBigBlock(0)
+  renderNewBike()
 })
 
 const highlightSelection = (arr) => {
@@ -183,8 +185,8 @@ const createGreenIcon = (x) => {
   let icons = document.querySelector('.highway__vector')
   icons.src = greenIconsHighway[x].link;
 }
+const bikesMenuTitle = document.querySelector('.bikes-menu__title')
 const bikesMenuChangeTitle = (x) => {
-  const bikesMenuTitle = document.querySelector('.bikes-menu__title')
   bikesMenuTitle.textContent = highwayTitles[x];
 }
 
@@ -235,22 +237,33 @@ popupLink.forEach((el) => {
 const bikesLinkHighway = document.querySelector('#bikes-link-highway')
 const bikesLinkGrevel = document.querySelector('#bikes-link-grevel')
 const bikesLinkTT = document.querySelector('#bikes-link-TT')
-
 bikesLinkHighway.addEventListener('click', () => {
+  bikesLinkHighway.classList.add('bikes__link_bold')
+  bikesLinkGrevel.classList.remove('bikes__link_bold')
+  bikesLinkTT.classList.remove('bikes__link_bold')
   removeOldCards()
-  renderBigBlock(0)
+  bikeTypes[0].forEach(element => {
+    renderCard(element.name, element.type)
+  });
 })
 bikesLinkGrevel.addEventListener('click', () => {
+  bikesLinkHighway.classList.remove('bikes__link_bold')
+  bikesLinkGrevel.classList.add('bikes__link_bold')
+  bikesLinkTT.classList.remove('bikes__link_bold')
   removeOldCards()
-  renderBigBlock(1)
+  bikeTypes[1].forEach(element => {
+    renderCard(element.name, element.type)
+  });
 })
 bikesLinkTT.addEventListener('click', () => {
+  bikesLinkHighway.classList.remove('bikes__link_bold')
+  bikesLinkGrevel.classList.remove('bikes__link_bold')
+  bikesLinkTT.classList.add('bikes__link_bold')
   removeOldCards()
-  renderBigBlock(2)
+  bikeTypes[2].forEach(element => {
+    renderCard(element.name, element.type)
+  });
 })
-
-
-
 
 
 const bikesMenu = document.querySelector('.bikes-menu')
@@ -267,16 +280,28 @@ const linkGrevel = document.querySelector('#link-grevel')
 const linkTT = document.querySelector('#link-TT')
 
 linkHighway.addEventListener('click', () => {
+  bikesMenuTitle.textContent = 'Шоссе'
   removeOldCards()
-  renderBigBlock(0)
+  bikeTypes[0].forEach(element => {
+    renderCard(element.name, element.type)
+  });
+  renderNewBike()
 })
 linkGrevel.addEventListener('click', () => {
+  bikesMenuTitle.textContent = 'Грэвел'
   removeOldCards()
-  renderBigBlock(1)
+  bikeTypes[1].forEach(element => {
+    renderCard(element.name, element.type)
+  });
+  renderNewBike()
 })
 linkTT.addEventListener('click', () => {
+  bikesMenuTitle.textContent = 'ТТ'
   removeOldCards()
-  renderBigBlock(2)
+  bikeTypes[2].forEach(element => {
+    renderCard(element.name, element.type)
+  });
+  renderNewBike()
 })
 const ellipseFirst = document.querySelector('#ellipse-first')
 const ellipseSecond = document.querySelector('#ellipse-second')
@@ -321,3 +346,4 @@ footerEmailForm.addEventListener('input', () => {
     })
   }
 })
+

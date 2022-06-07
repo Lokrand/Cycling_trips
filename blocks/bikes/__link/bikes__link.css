@@ -5,3 +5,7 @@
   margin-left: 41px;
   margin-top: 26px;
 }
+
+.bikes__link:hover {
+  cursor: pointer;
+}

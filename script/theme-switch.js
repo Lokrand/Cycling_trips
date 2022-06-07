@@ -1,5 +1,5 @@
 const buttonSwitch = document.querySelector('#theme-switch');
-const body = document.querySelector('.body');;
+const body = document.querySelector('.body');
 const highwayButton = document.querySelectorAll('.highway__button');
 const nightIcon = document.querySelector('.footer__theme-switch');
 const dayIcon = document.querySelector('.footer__theme');
