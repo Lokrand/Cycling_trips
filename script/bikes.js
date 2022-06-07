@@ -226,11 +226,32 @@ burgerMenu.addEventListener('click', () => {
 popupLink.forEach((el) => {
   el.addEventListener('click', () => {
     popup.classList.remove('popup_open')
+    burgerMenu.classList.remove('header__burger-menu_active')
     popupThemeSwitch.classList.remove('footer__theme_popup')
   })
 })
 
 // bikes menu
+const bikesLinkHighway = document.querySelector('#bikes-link-highway')
+const bikesLinkGrevel = document.querySelector('#bikes-link-grevel')
+const bikesLinkTT = document.querySelector('#bikes-link-TT')
+
+bikesLinkHighway.addEventListener('click', () => {
+  removeOldCards()
+  renderBigBlock(0)
+})
+bikesLinkGrevel.addEventListener('click', () => {
+  removeOldCards()
+  renderBigBlock(1)
+})
+bikesLinkTT.addEventListener('click', () => {
+  removeOldCards()
+  renderBigBlock(2)
+})
+
+
+
+
 
 const bikesMenu = document.querySelector('.bikes-menu')
 const bikesMenuArrow = document.querySelector('.bikes-menu__arrow')

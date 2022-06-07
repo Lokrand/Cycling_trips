@@ -1200,6 +1200,11 @@ template {
 @media screen and (max-width: 799px) {
   .highway__navigation {
     grid-area: B;
+    margin: 40px 0 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  .highway__navigation {
     margin: 0;
   }
 }
@@ -1267,7 +1272,7 @@ template {
 @media screen and (max-width: 1439px) {
   .highway__title {
     width: 300px;
-    margin: 40px 0 0 0;
+    margin: 0 0 40px 0;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1285,7 +1290,8 @@ template {
 }
 @media screen and (max-width: 499px) {
   .highway__title {
-    width: 284px;
+    margin-top: 0;
+    width: 130px;
     font: 700 32px/40px "Inter", sans-serif;
   }
 }
@@ -1541,7 +1547,7 @@ template {
 @media screen and (max-width: 1439px) {
   .bikes__title {
     width: 300px;
-    margin: 40px 0 0 0;
+    margin: 0 0 40px 0;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1560,6 +1566,7 @@ template {
   .bikes__title {
     width: 284px;
     font: 700 32px/40px "Inter", sans-serif;
+    margin-top: 0;
   }
 }
 .workout {

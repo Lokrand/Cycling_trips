@@ -19,13 +19,13 @@
 @media screen and (max-width: 799px) {
   .highway__navigation {
     grid-area: B;
-    margin: 0;
+    margin: 40px 0 0;
   }
 }
 
 
 @media screen and (max-width: 499px) {
   .highway__navigation {
-
+    margin: 0;
   }
 }
