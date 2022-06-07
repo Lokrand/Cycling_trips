@@ -16,6 +16,7 @@
     height: 22px;
     top: 25px;
     left: 280px;
+    z-index: 3;
   }
 }
 
@@ -28,13 +29,30 @@
 }
 .header__burger-menu span{
   top: 19px;
+  transition: all .2s linear;
 }
 .header__burger-menu::after, .header__burger-menu::before{
   content: '';
 }
 .header__burger-menu::after{
   bottom: 8px;
+  transition: all .2s linear;
 }
 .header__burger-menu::before{
   top: 3px;
+  transition: all .2s linear;
+}
+
+.header__burger-menu.header__burger-menu_active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__burger-menu.header__burger-menu_active::after {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+.header__burger-menu.header__burger-menu_active span{
+  transform: scale(0);
 }

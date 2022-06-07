@@ -214,21 +214,19 @@ renderBigBlock()
 
 // Popup
 
-const popupCross = document.querySelector('.popup__cross')
 const popup = document.querySelector('.popup')
 const burgerMenu = document.querySelector('.header__burger-menu')
 const popupLink = document.querySelectorAll('.popup__link')
 const popupThemeSwitch = document.querySelector('#popup-theme')
 burgerMenu.addEventListener('click', () => {
-  popupThemeSwitch.classList.add('footer__theme_popup')
-  popup.classList.add('popup_open')
-})
-popupCross.addEventListener('click', () => {
-  popup.classList.remove('popup_open')
+  popupThemeSwitch.classList.toggle('footer__theme_popup')
+  popup.classList.toggle('popup_open')
+  burgerMenu.classList.toggle('header__burger-menu_active')
 })
 popupLink.forEach((el) => {
   el.addEventListener('click', () => {
     popup.classList.remove('popup_open')
+    popupThemeSwitch.classList.remove('footer__theme_popup')
   })
 })
 

@@ -1,7 +1,6 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 @import '../vendor/fonts/fonts.css';
 @import '../blocks/popup/__theme/popup__theme.css';
-@import '../blocks/popup/__theme-switch/popup__theme-switch.css';
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0;
 }
@@ -472,6 +471,7 @@ template {
     height: 22px;
     top: 25px;
     left: 280px;
+    z-index: 3;
   }
 }
 .header__burger-menu span, .header__burger-menu::after, .header__burger-menu::before {
@@ -484,6 +484,7 @@ template {
 
 .header__burger-menu span {
   top: 19px;
+  transition: all 0.2s linear;
 }
 
 .header__burger-menu::after, .header__burger-menu::before {
@@ -492,10 +493,26 @@ template {
 
 .header__burger-menu::after {
   bottom: 8px;
+  transition: all 0.2s linear;
 }
 
 .header__burger-menu::before {
   top: 3px;
+  transition: all 0.2s linear;
+}
+
+.header__burger-menu.header__burger-menu_active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__burger-menu.header__burger-menu_active::after {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+.header__burger-menu.header__burger-menu_active span {
+  transform: scale(0);
 }
 
 .content {
@@ -2093,6 +2110,20 @@ template {
 
 .popup_open {
   display: flex;
+}
+
+.popup__theme-switch::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../../images/nigth.svg");
+  background-size: 20px 20px;
+  position: absolute;
+  top: 2px;
+  left: 66px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 :root {
