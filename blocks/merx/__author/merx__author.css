@@ -10,13 +10,6 @@
   }
 }
 
-@media screen and (max-width: 799px) {
-  .merx__author {
-
-  }
-}
-
-
 @media screen and (max-width: 499px) {
   .merx__author {
     font: 500 14px/22px 'Inter', sans-serif;

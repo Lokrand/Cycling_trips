@@ -22,12 +22,6 @@
   }
 }
 
-@media screen and (max-width: 799px) {
-  .header__menu {
-
-  }
-}
-
 @media screen and (max-width: 499px) {
   .header__menu {
     display: none;
