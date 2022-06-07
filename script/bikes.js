@@ -262,7 +262,7 @@ linkTT.addEventListener('click', () => {
 const ellipseFirst = document.querySelector('#ellipse-first')
 const ellipseSecond = document.querySelector('#ellipse-second')
 const ellipseThird = document.querySelector('#ellipse-third')
-if (document.documentElement.clientWidth < 500) {
+if (document.documentElement.clientWidth < 800) {
   ellipseFirst.addEventListener('click', () => {
     ellipseThird.classList.remove('bikes__ellipse_selected')
     ellipseSecond.classList.remove('bikes__ellipse_selected')

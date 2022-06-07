@@ -1,4 +1,4 @@
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 799px) {
   .bikes__type:nth-child(3) {
     display: none;
   }

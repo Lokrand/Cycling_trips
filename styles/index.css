@@ -1409,6 +1409,7 @@ template {
 @media screen and (max-width: 799px) {
   .bikes__links {
     padding: 0;
+    display: none;
   }
 }
 @media screen and (max-width: 499px) {
@@ -1443,7 +1444,7 @@ template {
     left: 72px;
   }
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 799px) {
   .bikes__type:nth-child(3) {
     display: none;
   }
@@ -1491,7 +1492,7 @@ template {
   padding: 0;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 799px) {
   .bikes__navigation {
     display: flex;
   }
@@ -1968,7 +1969,7 @@ template {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 799px) {
   .bikes-menu {
     display: block;
   }
