@@ -14,7 +14,7 @@
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .content__button:hover {
-  color: #fff !important;
+  color: #fff;
   background-color: transparent;
   text-shadow: nthree;
 }
@@ -34,7 +34,7 @@
   z-index: -1;
   border-radius: 4px;
   content: '';
-  color: #fff !important;
+  color: #fff;
   background: #319E75;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
