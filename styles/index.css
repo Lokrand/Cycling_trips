@@ -2123,14 +2123,13 @@ template {
 }
 
 .popup__theme {
-  position: absolute;
+  position: relative;
   top: -32px;
   left: 1112px;
   display: inline-block;
   height: 28px;
   line-height: 28px;
   margin-right: 10px;
-  position: relative;
   vertical-align: middle;
   font-size: 14px;
   user-select: none;
@@ -2208,7 +2207,8 @@ template {
 }
 @media screen and (max-width: 499px) {
   .popup__theme {
-    display: none;
+    left: -170px;
+    top: 578px;
   }
 }
 .popup__theme-switch::after {
