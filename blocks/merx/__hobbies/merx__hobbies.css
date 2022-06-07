@@ -10,13 +10,6 @@
   }
 }
 
-@media screen and (max-width: 799px) {
-  .merx__hobbies {
-
-  }
-}
-
-
 @media screen and (max-width: 499px) {
   .merx__hobbies {
     font: 400 10px/16px 'Inter', sans-serif;

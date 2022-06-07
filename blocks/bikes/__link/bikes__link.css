@@ -2,8 +2,7 @@
   font: 400 18px/28px 'Inter', sans-serif;
   color: var(--content-text-color);
   opacity: .7;
-  margin-left: 41px;
-  margin-top: 26px;
+  margin: 26px 0 0 41px;
 }
 
 .bikes__link:hover {

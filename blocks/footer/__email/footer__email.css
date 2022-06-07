@@ -21,28 +21,9 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1439px) {
-  .footer__email {
-
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .footer__email {
-
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .footer__email {
-
-  }
-}
-
 @media screen and (max-width: 499px) {
   .footer__email {
     width: 262px;
     padding: 0 0 0 20px;
   }
 }
-
